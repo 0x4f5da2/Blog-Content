@@ -7,7 +7,7 @@ branches:
   only:
   - master
 before_install:
-- git clone git clone https://${ACCESS_TOKEN}@github.com/0x4f5da2/Blog-Hexo.git
+- git clone https://${ACCESS_TOKEN}@github.com/0x4f5da2/Blog-Hexo.git
 - mkdir Blog-Hexo/source
 - cp -r _post Blog-Hexo/source
 - npm install -g hexo-cli
