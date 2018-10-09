@@ -6,7 +6,7 @@ cache:
   - node_modules
 branches:
   only:
-  - deploy
+  - master
 before_install:
 - git clone https://${ACCESS_TOKEN}@github.com/0x4f5da2/Blog-Hexo.git
 - mkdir Blog-Hexo/source
@@ -20,7 +20,7 @@ script:
 - hexo clean
 - hexo generate
 after_script:
-- git config user.name "${GIT_NAME}"
-- git config user.email "${GIT_EMAIL}"
+- git config --global user.name "${GIT_NAME}"
+- git config --global user.email "${GIT_EMAIL}"
 - sed -i "s/access_token/${ACCESS_TOKEN}/g" ./_config.yml
 - hexo deploy
