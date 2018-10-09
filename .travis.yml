@@ -6,7 +6,7 @@ cache:
   - node_modules
 branches:
   only:
-  - master
+  - deploy
 before_install:
 - git clone https://${ACCESS_TOKEN}@github.com/0x4f5da2/Blog-Hexo.git
 - mkdir Blog-Hexo/source
