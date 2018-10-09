@@ -2,26 +2,23 @@ language: node_js
 sudo: required
 cache:
   directories:
-    - node_modules
+  - node_modules
 branches:
   only:
-    - master
-
+  - master
 before_install:
-  - npm install -g hexo-cli
-
+- npm install -g hexo-cli
 install:
-  - npm install
-  - npm install hexo-deployer-git --save
-
+- npm install
+- npm install hexo-deployer-git --save
 script:
-  - hexo clean
-  - hexo generate
-
-# 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署
+- hexo clean
+- hexo generate
 after_script:
-  - git config user.name "yourName"
-  - git config user.email "yourEmail"
-  # 替换同目录下的_config.yml文件中gh_token字符串为travis后台刚才配置的变量，注意此处sed命令用了双引号。单引号无效！
-  - sed -i "s/gh_token/${GH_TOKEN}/g" ./_config.yml
-  - hexo deploy
+- git config user.name "yourName"
+- git config user.email "yourEmail"
+- sed -i "s/gh_token/${GH_TOKEN}/g" ./_config.yml
+- hexo deploy
+env:
+  global:
+    secure: eDx59FAKhYf66FzF6lhl29k//AMtkVvDt3E97Ti+HmrByzmjDybVvPd+vsQ/W4gAJFFZJTlzT9/9pPouHeCL93s1sx4xvIsq+xnY7LXu6TbYzrfHK9ex/GlvfAuxWscOZKmRzpsflCo8cARiD4FnhPzRItkuo63lY323XX7gg4dTa1HCTNPErht/cma5v//AosUVy2JXpB0D45xTXzp+iA27uQOr4QtxO73TUdFXKcxeP+gMjBDj9ZS+phzhOStgPvs5YbppWP4zn7YqkT1VYTqdZd0lVqweWmTVFJ7JDjQGP91CTt7+gefWPyS1exU9NEeU8kfDs9+HV6lyovuhmrfjO0JEdx4TGkXAEg/YVyqwuUNC2hM7XheZhOyd1AgzUjDeYRSiWxiY4PQO4jmDNUjtCJrr3HyhytN1lkO0DmPfTIzetd8u7SBUhE+gZ3FHpqPKM/vhGG8Xl3T0VhS5q6uEKuW4Xoa33Vax2SrsUpf+pnvD+a98cxLm2MppmJsehS5dv7Bp77P6oC0i5cRbxb+DX1mtik8lL9d3PZvELqKPu2vGKyugg4r6oIRdVgX1L7BdPlpKJE80ik/ELwCVkh2NTJ46rV9U3QpTjTvTnIFK40GiM/1qmBXUVsaYYjFH0DDrHSZD87oOmDbsE3i8cfhh7fNrVJZGHZOFlEaCIog=
