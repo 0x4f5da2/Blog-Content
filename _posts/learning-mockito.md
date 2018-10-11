@@ -4,7 +4,7 @@ date: 2018-10-11 14:59:19
 tags:
 ---
 
-在之前实习的时候用mockito写过一段时间的单元测试，现在回过头来总结一下
+在之前实习的时候用mockito写过一段时间的单元测试，现在回过头来总结了一下
 
 <!-- more -->
 
@@ -69,7 +69,7 @@ tags:
 
 * `@Test(expected= IndexOutOfBoundsException.class)`
 
-<del>大概率并不是</del>最佳实践
+估计并不是最佳实践的实践
 ---
 
 当时做的事情是给后端服务些单元测试，服务很套路的分为controller层，service层，dao层还有一些util工具类。

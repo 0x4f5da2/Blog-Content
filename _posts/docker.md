@@ -80,7 +80,6 @@ docker load -i <文件名>
 ```
 
 
-docker账户相关文件位置
----
+### docker账户相关文件位置
 
 ~/.docker/config.json

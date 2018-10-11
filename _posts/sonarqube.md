@@ -32,7 +32,7 @@ sonarqube：一款代码质量管理平台，能够对代码质量进行分析
                 <sonar.host.url>
                   http://localhost:9000
                 </sonar.host.url>
-                <!-- ldap的账号和密码，也可在运行时参数中设置 -->
+                <!-- 账号和密码，也可在运行时参数中设置 -->
                 <sonar.login>username</sonar.login>
                 <sonar.password>password</soanr.password>
             </properties>
