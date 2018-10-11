@@ -1,3 +1,5 @@
-# Personal Blog
+# Content of Personal Blog
 
-emmmmm。。。。用来放个人博客自动化部署的markdown文件的
+[![Build Status](https://travis-ci.org/0x4f5da2/Blog-Content.svg?branch=master)](https://travis-ci.org/0x4f5da2/Blog-Content)  
+
+用于个人博客的自动化部署 
