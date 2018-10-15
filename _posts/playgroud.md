@@ -1,5 +1,5 @@
 ---
-title: 杂七杂八以及一些奇淫技巧
+title: 杂七杂八
 date: 2018-10-11 15:27:19
 tags:
 ---
@@ -319,3 +319,65 @@ jar {
 }
 
 ```
+
+单例模式
+---
+
+使用DCL
+
+```java
+public class Singleton {
+    private volatile static Singleton singleton;
+
+    public static Singleton getInst() {
+        if (singleton == null) {
+            synchronized (Singleton.class) {
+                if (singleton == null) {
+                    singleton = new Singleton();
+                }
+            }
+        }
+        return singleton;
+    }
+}
+```
+
+使用内部类
+```java
+public class MyObject {
+    private static class MyObjectHandler {
+        private static MyObject myObject = new MyObject();
+    }
+    private MyObject() {
+
+    }
+    public static MyObject getInst() {
+        return MyObjectHandler.myObject;
+    }
+}
+```
+
+使用static代码块（代码略）
+
+序列化相关：将对象序列化之后再进行反序列化
+```java
+public class MyObject implements Serializable {
+    private static final long serialVersionUID = 888L;
+    private static class MyObjectHandler {
+        private static final MyObject myObject = new MyObject();
+    }
+    private MyObject() {
+
+    }
+    public static MyObject getInst() {
+        return MyObjectHandler.myObject;
+    }
+
+    protected Object readResolve() throws Exception {
+        System.out.println("called");
+        return MyObjectHandler.myObject;
+    }
+}
+```
+
+使用枚举类型：在使用枚举类型的时候，构造方法会自动的被调用
