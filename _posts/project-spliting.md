@@ -1,10 +1,10 @@
 ---
-title: 拆分Spring-Boot项目
+title: Spring-Boot项目模块拆分实践
 date: 2018-10-11 15:20:19
 tags:
 ---
 
-实习的时候打得杂，刚做完就跑路了，也不知道上线了没
+实习的时候打的杂之一，需要给一个Spring-Boot后端服务拆分模块
 
 <!-- more -->
 
