@@ -1,5 +1,5 @@
 ---
-title: sonarqube入门实践
+title: SonarQube入门实践
 date: 2018-10-11 15:48:19
 tags:
 ---
