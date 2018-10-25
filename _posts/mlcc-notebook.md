@@ -34,3 +34,10 @@ tags:
 * 通过[配套的playground](https://developers.google.cn/machine-learning/crash-course/training-and-test-sets/playground-exercise)可以推断出通过降低学习速率可以提高训练效果。多数情况下，增加批量大小不会显著影响训练损失或测试损失，有的时候，增加批量大小会是的训练效果更好。
 
 * 将数据分为`训练数据-测试数据`可能会在不断地调整参数的过程中造成过拟合。一种较为优秀的时间是将数据分为`训练数据-验证数据-测试数据`。通过在验证数据对训练结果进行验证，而测试数据只在最后使用。
+
+* shuffle dataframe
+    ```python
+    from sklearn.utils import shuffle
+    df = shuffle(df)
+    ```
+
