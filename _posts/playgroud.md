@@ -381,3 +381,30 @@ public class MyObject implements Serializable {
 ```
 
 使用枚举类型：在使用枚举类型的时候，构造方法会自动的被调用
+
+使用Python镜像
+---
+
+```
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple ...
+```
+
+安装torch内存爆炸（MemoryError）
+---
+
+由于pip的缓存机制尝试将希望安装库的整个文件缓存到内存，而在限制缓存大小的环境中如果安装包较大就会出现MemoryError的这个错误，可以加入如下参数规避。
+
+```
+pip --no-cache-dir install ...
+```
+
+
+virtualenv的基本操作
+---
+
+```
+virtualenv --no-site-packages -p <PYTHON_EXE> <DEST_DIR>
+
+source <DESTDIR>/bin/active
+```
+
