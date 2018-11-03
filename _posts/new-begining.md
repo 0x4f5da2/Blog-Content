@@ -14,7 +14,7 @@ tags:
 
 觉得本科最幸运的事情就是遇到了一群优秀而又有趣的的人（排名不分先后）：特别能装逼的[Great-Li-Xin](https://github.com/Great-Li-Xin)；ICPC大佬兼区块链大佬[jacklightChen](https://github.com/jacklightChen)；深度学习大佬[diggerdu](https://github.com/diggerdu)；读书人[Handora](https://github.com/Handora)；安全大佬[Vector1iu](https://github.com/Vector1iu)；nlp大佬[nonococoleo](https://github.com/nonococoleo)；小机灵鬼[12Dong](https://github.com/12Dong)；微软大佬[EEmpire](https://github.com/EEmpire)；还有Github上没有互加好友的各位大佬。
 
-同济推免面试的时候导师问我硕士阶段地打算。在那之前并没有想过这样的事情，最后只能“现场直编”，和导师胡乱地扯一通临时想出来的“打算”。随着秋招的进行，身边的小伙伴们一个个都拿到了预期中的offer。我也时常思考当时的那个问题，思考硕士毕业的我，将会是什么样的模样。最后，也算是有了一个微小的目标：
+同济推免面试的时候导师问我硕士阶段的打算。在那之前并没有想过这样的事情，最后只能“现场直编”，和导师胡乱地扯一通临时想出来的“打算”。随着秋招的进行，身边的小伙伴们一个个都拿到了预期中的offer。我也时常思考当时的那个问题，思考硕士毕业的我，将会是什么样的模样。最后，也算是有了一个微小的目标：
 
 * **找到女朋友**
 
