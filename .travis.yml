@@ -18,6 +18,8 @@ install:
 - npm install hexo-deployer-git --save
 - sed -i "s/valine_appid/${VALINE_APPID}/g" ./themes/next/_config.yml
 - sed -i "s/valine_appkey/${VALINE_APPKEY}/g" ./themes/next/_config.yml
+- sed -i "s/tencent_analytics_id/${ANALYTICS_ID}/g" ./themes/next/_config.yml
+- sed -i "s/tencent_mta_id/${MTA_ID}/g" ./themes/next/_config.yml
 script:
 - hexo clean
 - hexo generate
