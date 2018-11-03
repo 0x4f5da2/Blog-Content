@@ -63,3 +63,13 @@ hexo server
 ```
 
 至此，我的~~狂拽炫酷吊炸天~~简陋的博客就呈现在你们面前了
+
+---
+
+### 时隔不知道多久的更新
+
+现在的博客相比现在各位看到了又有了一些微小的更新，有些时看得见的，比如评论；有些是看不见的，比如CI部署。CI部署已经有一篇了，然后就简单的写一下评论吧。主要还是怕之后忘。
+
+#### 开启评论
+
+Hexo的Next主题本身就自带评论，只要进行简单的配置就OK了。具体在`themes/next/_config.yml`中。找到使用<kbd>command/ctrl</kbd>+<kbd>F</kbd>查找`valine`相关字段进行设置就可以了。appid以及appkey可以在[LeanCloud](https://leancloud.cn/applist.html)注册一个开发者账号取得。
