@@ -10,7 +10,7 @@ tags:
 
 记忆中本科生活的前一年半，过得就好似高中老师和他的学生描述的那样，基本上都在玩耍中度过。上课想听就听，不想听玩玩手机，没课的时候在寝室里玩玩游戏，期末的前两周熬夜突击一下，最后取得一个体面的成绩、拿着一点微小的奖学金。觉得大学的生活真舒服，丝毫不去想将来的事情。
 
-觉得自己长进最大的，还要属大三这一年。经历了之前的废宅生活不曾经历的事情，也见识到了更大的世界。刷推免需要的志愿者证书、和同学一起水会议论文、为寻找暑期的实习投递简历参加面试、参加推免的夏令营，日子也过得少许忙碌充实了些。
+觉得自己长进最大的，还要属大三这一年。经历了之前的废宅生活不曾经历的事情，也见识到了更大的世界。刷推免需要的志愿者证书、和同学一起水会议论文、为寻找暑期的实习投递简历参加面试、参加推免的夏令营，日子也过得少许忙碌充实了些。
 
 觉得本科最幸运的事情就是遇到了一群优秀而又有趣的的人（排名不分先后）：特别能装逼的[Great-Li-Xin](https://github.com/Great-Li-Xin)；ICPC大佬兼区块链大佬[jacklightChen](https://github.com/jacklightChen)；深度学习大佬[diggerdu](https://github.com/diggerdu)；读书人[Handora](https://github.com/Handora)；安全大佬[Vector1iu](https://github.com/Vector1iu)；nlp大佬[nonococoleo](https://github.com/nonococoleo)；小机灵鬼[12Dong](https://github.com/12Dong)；微软大佬[EEmpire](https://github.com/EEmpire)；还有Github上没有互加好友的各位大佬。
 
