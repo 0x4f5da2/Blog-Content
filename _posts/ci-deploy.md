@@ -73,3 +73,9 @@ after_script:
 ```
 
 然后，每次在向Blog-Content仓库push的时候，就能够自动地部署了
+
+--- 
+
+## 更新
+
+之后又加上了coding.net的CI部署，具体的信息可以看ci的配置文件
