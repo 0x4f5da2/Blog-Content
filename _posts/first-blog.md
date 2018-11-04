@@ -73,3 +73,7 @@ hexo server
 #### 开启评论
 
 Hexo的Next主题本身就自带评论，只要进行简单的配置就OK了。具体在`themes/next/_config.yml`中。找到使用<kbd>command/ctrl</kbd>+<kbd>F</kbd>查找`valine`相关字段进行设置就可以了。appid以及appkey可以在[LeanCloud](https://leancloud.cn/applist.html)注册一个开发者账号取得。
+
+#### 多处部署 + 多线路解析
+
+发现腾讯云有多线路解析的功能，也就是说可以根据用户的访问的地理位置，解析到不同的服务器上。折腾了半天又把博客部署到了coding.net的Pages服务上。然后把Github的Pages服务以及Coding.net的Pages服务分别设置为国外解析线路以及国内的解析线路。然而，一通操作之后，并没有快多少🌚。
