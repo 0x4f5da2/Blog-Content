@@ -27,5 +27,5 @@ after_script:
 - git config --global user.name "${GIT_NAME}"
 - git config --global user.email "${GIT_EMAIL}"
 - sed -i "s/access_token/${ACCESS_TOKEN}/g" ./_config.yml
-- echo "blog.4f5da2.com" > CNAME
+- echo "blog.4f5da2.com" > ./public/CNAME
 - hexo deploy
