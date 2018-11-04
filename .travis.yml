@@ -27,8 +27,5 @@ after_script:
 - git config --global user.name "${GIT_NAME}"
 - git config --global user.email "${GIT_EMAIL}"
 - sed -i "s/access_token/${ACCESS_TOKEN}/g" ./_config.yml
+- echo "blog.4f5da2.com" > CNAME
 - hexo deploy
-- echo ${ID_RSA} > ~/.ssh/id_rsa
-- cd ./public
-- git remote add coding https://git.dev.tencent.com/chen1319276472/chen1319276472.coding.me.git
-- git push --force --quiet -u coding master
