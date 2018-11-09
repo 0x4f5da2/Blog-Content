@@ -1,5 +1,5 @@
 ---
-title: Gitlab-CI中有关JOB失败的相关配置
+title: Gitlab-CI中失败重试的相关配置
 date: 2018-10-11 15:27:19
 tags:
 ---
