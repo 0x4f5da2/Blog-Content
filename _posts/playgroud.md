@@ -408,3 +408,20 @@ virtualenv --no-site-packages -p <PYTHON_EXE> <DEST_DIR>
 source <DESTDIR>/bin/active
 ```
 
+在Ubuntu中调整swap的大小
+---
+
+跑论文的实现在Re-ranking的时候应为内存不够爆炸了，调整了一下swapfile的大小
+
+```
+sudo swapoff /swapfile
+sudo rm /swapfile
+sudo fallocate -l 8G /swapfile
+chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
+参考资料：
+
+[How To Add Swap Space on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-18-04)
+
