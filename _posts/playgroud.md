@@ -425,3 +425,12 @@ sudo swapon /swapfile
 
 [How To Add Swap Space on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-18-04)
 
+简单的HTTP服务器
+---
+
+
+Python自带的一个简单的HTTP服务器，可以测试的时候使用，也可以用于在局域网中临时传输文件
+```sh
+python3 -m http.server <PORT>
+```
+
