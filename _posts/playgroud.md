@@ -434,3 +434,33 @@ Python自带的一个简单的HTTP服务器，可以测试的时候使用，也�
 python3 -m http.server <PORT>
 ```
 
+
+X11Forwarding
+---
+
+可以通过ssh转发远端主机的GUI程序到本地
+
+以macOS使用ssh连接到Ubuntu为例：
+
+* 更改`/etc/ssh/sshd_config`配置如下
+    ```
+    AllowAgentForwarding yes
+    AllowTcpForwarding yes
+    X11Forwarding yes
+    X11DisplayOffset 10
+    X11UseLocalhost no
+    ```
+
+* 使用`sudo service sshd restart`重启ssh服务
+
+* 安装xauth
+
+* 在本地安装XQuartz
+
+* 使用`ssh -Y <user>@<host>`连接主机
+
+* 尝试运行`xclock`查看结果
+
+在带宽的消耗方面，感觉比较消耗带宽：开一个窗口稍微拖动一下就需要大约3～5MB/s的带宽，并且不是特别流畅。除了带宽之外，并不是所有的GUI程序都能够运行。
+
+因此：感觉并没有什么用🌚
