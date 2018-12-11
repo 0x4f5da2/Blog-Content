@@ -73,6 +73,12 @@ sudo reboot
 docker save -o <文件名> <镜像名>
 ```
 
+### 将容器提交成为镜像
+
+```sh
+docker commit -m "commit message" -a "author info" <container_id>
+```
+
 ### 加载保存成文件的docker镜像
 
 ```sh
