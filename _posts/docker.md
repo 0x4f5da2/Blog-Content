@@ -70,19 +70,26 @@ sudo reboot
 ### 将docker镜像保存成tar文件
 
 ```sh
-docker save -o <文件名> <镜像名>
+docker save -o [文件名] [镜像名]
 ```
 
 ### 将容器提交成为镜像
 
 ```sh
-docker commit -m "commit message" -a "author info" <container_id>
+docker commit -m "commit message" -a "author info" [container_id]
 ```
 
 ### 加载保存成文件的docker镜像
 
 ```sh
-docker load -i <文件名>
+docker load -i [文件名]
+```
+
+### 直接将容器到处至tar
+
+```sh
+
+docker export [container name] > [file name]
 ```
 
 
