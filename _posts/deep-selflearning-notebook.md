@@ -31,7 +31,9 @@ tags:
 一开始并没有发现这篇文章其实和arXiv上的“End-to-End...”那篇是同一篇文章，后来和师兄交流才知道😂
 
 最开始不会配环境，把配套的代码跑起来还费了一番功夫（主要还是太菜了🌚），记录一下免得以后会用
+
 * 使用docker镜像`nvidia/cuda:8.0-cudnn5-devel`搭建环境
+
 * 换源，这里使用清华的源
     ```
     # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
@@ -48,6 +50,7 @@ tags:
     # deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
     # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
     ```
+
 * 安装环境
     ```sh
     apt update
@@ -61,8 +64,11 @@ tags:
 
     # 然后就可以按照readme里的说明编译
     ```
+
 * 在`tools/demo.py`中的`import matplotlib`下添加`matplotlib.use('Agg')`来避免对GUI相关功能的调用（因为是在docker里）
+
 * 由于protobuf版本发生变化，需在`lib/fast_rcnn/train.py`中增加一行`import google.protobuf.text_format`
-* 按照Github上对应的readme进行编译，使用`cmake .. -DUSE_MPI=ON -DCUDNN_INCLUDE=/usr/include -DCUDNN_LIBRARY=/usr/lib/x86_64-linux-gnu/libcudnn.so`
+
+* 按照Github上对应的readme进行编译，填入docker镜像中cuDNN的路径如下：`cmake .. -DUSE_MPI=ON -DCUDNN_INCLUDE=/usr/include -DCUDNN_LIBRARY=/usr/lib/x86_64-linux-gnu/libcudnn.so`
 
 
