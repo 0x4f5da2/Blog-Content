@@ -71,4 +71,20 @@ tags:
 
 * 按照Github上对应的readme进行编译，填入docker镜像中cuDNN的路径如下：`cmake .. -DUSE_MPI=ON -DCUDNN_INCLUDE=/usr/include -DCUDNN_LIBRARY=/usr/lib/x86_64-linux-gnu/libcudnn.so`
 
+### Neural Person Search Machine
 
+* 不同于原先的“两步式”的方法，提出了一种递归缩减画面中的查找范围的一种方法
+
+> selectively shrink its focus from a loose region to a tighter one containing the target automatically
+
+* 论文中的方法基于“目标”在一幅画面中只有一个这个简单的假设，因此使用又粗到细地搜索“目标”可能会出现的地方可能会是一种更加高效的方法
+
+* contributions:
+    * robust to distracting factors
+    * redefine the person search process
+    * propose a new neural search model that can guide the model to reucrsively focus on the effective regions
+
+* 论文中 ~~批判~~ 提及了 *Person
+re-identification in the wild.* 以及 *Joint detection and identification feature learning for person search.* 
+
+> these two works simply focus on how the interplay of pedestrian detection and person re-identification affects the overall performance, and they still isolate the person search into two individual components (detection and re-identification), which would introduce extra
