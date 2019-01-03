@@ -1,9 +1,6 @@
 language: node_js
 node_js: stable
 sudo: required
-cache:
-  directories:
-  - node_modules
 branches:
   only:
   - master
@@ -11,8 +8,8 @@ before_install:
 - git clone https://${ACCESS_TOKEN}@github.com/0x4f5da2/Blog-Hexo.git
 - mkdir Blog-Hexo/source
 - cp -r _posts Blog-Hexo/source
-- npm install -g hexo-cli
 install:
+- npm install -g hexo-cli
 - cd Blog-Hexo
 - npm install
 - npm install hexo-deployer-git --save
