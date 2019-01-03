@@ -88,3 +88,11 @@ tags:
 re-identification in the wild.* 以及 *Joint detection and identification feature learning for person search.* 
 
 > these two works simply focus on how the interplay of pedestrian detection and person re-identification affects the overall performance, and they still isolate the person search into two individual components (detection and re-identification), which would introduce extra
+
+* 上述过程可以被看作是一连串的建模过程
+
+> Learning to search for a person from a big region to a spe- cific person region within the gallery image can be deemed as a sequence modeling problem.
+
+## TODO
+
+* LSTM：Neural Person Search Machine中提到了，感觉需要看一下

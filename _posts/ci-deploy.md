@@ -22,7 +22,7 @@ tags:
 
 简单的来说就是在事先配置好的情况下（比如push到一个仓库），自动触发并执行预设的一连串操作（eg：编译，单元测试）
 
-经过实践，发现使用过的Gitlab-CI和Travis-CI都是在执行CI的时候启动一个docker容器。然后在容器内完成对应的操作，也就是说*inx系统的shell命令在CI的配置文件里面完全是可用。
+经过实践，发现使用过的Gitlab-CI和Travis-CI都是在执行CI的时候启动一个docker容器。然后在容器内完成对应的操作，CI脚本所使用的正是shell命令！
 
 ## How to CI？
 
@@ -34,6 +34,7 @@ tags:
 * 将两个仓库的内容合并
 * 使用`sed`将Hexo的_config.yml中access_token替换为真正的Access Token
   ```yml
+  # exmaple
   deploy:
     type: git
     repo: https://access_token@github.com/0x4f5da2/0x4f5da2.github.io.git
@@ -47,9 +48,6 @@ tags:
 language: node_js
 node_js: stable
 sudo: required
-cache:
-  directories:
-  - node_modules
 branches:
   only:
   - master
@@ -78,4 +76,4 @@ after_script:
 
 ## 更新
 
-之后又加上了coding.net的CI部署，具体的信息可以看ci的配置文件
+之后又加上了coding.net的CI部署，具体的信息可以看Github上对应仓库的`.travis-ci.yml`
