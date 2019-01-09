@@ -94,5 +94,10 @@ re-identification in the wild.* 以及 *Joint detection and identification featu
 > Learning to search for a person from a big region to a spe- cific person region within the gallery image can be deemed as a sequence modeling problem.
 
 ## TODO
+* 准备学习的知识
+    * LSTM、ResNet-50、RNN
+    * Dictionary Learning、Domain Adaption、Siamese Network、Embedding、Cross Entropy
 
-* LSTM：Neural Person Search Machine中提到了，感觉需要看一下
+* 公开课以及准备了解的资料
+    * cs231n
+    * UCI Machine Learning Repository
