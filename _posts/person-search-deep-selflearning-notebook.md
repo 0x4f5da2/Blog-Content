@@ -15,22 +15,22 @@ tags:
 ## Paper List (Person Search)
 
 |论文|来源|参考资料|
-|:-|:-|:-|
-|A Discriminatively Learned Feature Embedding Based on Multi-Loss Fusion For Person Search|ICASSP 2018||
-|Correlation Based Identity Filter: An Efficient Framework for Person Search|ICIG2017||
+|:-:|:-:|:-:|
+|A Discriminatively Learned Feature Embedding Based on Multi-Loss Fusion For Person Search|ICASSP 2018|-|
+|Correlation Based Identity Filter: An Efficient Framework for Person Search|ICIG2017|-|
 |Joint Detection and Identification Feature Learning for Person Search|CVPR2017|https://github.com/ShuangLI59/person_search|
-|Enhanced Deep Feature Representation for Person Search|CCCV2017||
-|Fusion-Attention Network for person search with free-form natural language|Pattern Recognition Letters 2018||
-|IAN: The Individual Aggregation Network for Person Search|Pattern Recognition 2019||
-|Instance Enhancing Loss: Deep Identity-Sensitive Feature Embedding For Person Search|ICIP2018||
-|Neural Person Search Machines|ICCV2017||
+|Enhanced Deep Feature Representation for Person Search|CCCV2017|-|
+|Fusion-Attention Network for person search with free-form natural language|Pattern Recognition Letters 2018|-|
+|IAN: The Individual Aggregation Network for Person Search|Pattern Recognition 2019|-|
+|Instance Enhancing Loss: Deep Identity-Sensitive Feature Embedding For Person Search|ICIP2018|-|
+|Neural Person Search Machines|ICCV2017|-|
 |Person Re-identification in the Wild|CVPR2017|https://github.com/liangzheng06/PRW-baseline|
-|Person Search by Multi-Scale Matching|ECCV2018||
+|Person Search by Multi-Scale Matching|ECCV2018|-|
 |Person Search in Videos with One Portrait Through Visual and Temporal Links|ECCV2018|https://github.com/hqqasw/person-search-PPCC|
-|Person Search via A Mask-Guided Two-Stream CNN Model|ECCV 2018||
+|Person Search via A Mask-Guided Two-Stream CNN Model|ECCV 2018|-|
 |Person Search with Natural Language Description|CVPR2017|https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description|
-|Transferring a Semantic Representation for Person Re-Identification and Search|CVPR2015||
-|Cascade Attention Network for Person Search: Both Image and Text-Image Similarity Selection|arXiv||
+|Transferring a Semantic Representation for Person Re-Identification and Search|CVPR2015|-|
+|Cascade Attention Network for Person Search: Both Image and Text-Image Similarity Selection|arXiv|-|
 
 ## Dataset
 
