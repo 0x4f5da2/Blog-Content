@@ -1,5 +1,5 @@
 ---
-title: 深度自学笔记(持续更新)
+title: 深度自学笔记(Person Search)
 date: 2018-12-07 13:55:18
 tags:
 ---
@@ -8,11 +8,41 @@ tags:
 
 <!-- more -->
 
-## 论文
+## Overview
+
+行人搜索的工作主要是将行人检测（detection）以及行人重识别（Re-ID）整合在一起的工作。相比被广泛研究的单纯的行人重识别要更加贴近于现实的应用。
+
+## Paper List (Person Search)
+
+|论文|来源|参考资料|
+|:-|:-|:-|
+|A Discriminatively Learned Feature Embedding Based on Multi-Loss Fusion For Person Search|ICASSP 2018||
+|Correlation Based Identity Filter: An Efficient Framework for Person Search|ICIG2017||
+|Joint Detection and Identification Feature Learning for Person Search|CVPR2017|https://github.com/ShuangLI59/person_search|
+|Enhanced Deep Feature Representation for Person Search|CCCV2017||
+|Fusion-Attention Network for person search with free-form natural language|Pattern Recognition Letters 2018||
+|IAN: The Individual Aggregation Network for Person Search|Pattern Recognition 2019||
+|Instance Enhancing Loss: Deep Identity-Sensitive Feature Embedding For Person Search|ICIP2018||
+|Neural Person Search Machines|ICCV2017||
+|Person Re-identification in the Wild|CVPR2017|https://github.com/liangzheng06/PRW-baseline|
+|Person Search by Multi-Scale Matching|ECCV2018||
+|Person Search in Videos with One Portrait Through Visual and Temporal Links|ECCV2018|https://github.com/hqqasw/person-search-PPCC|
+|Person Search via A Mask-Guided Two-Stream CNN Model|ECCV 2018||
+|Person Search with Natural Language Description|CVPR2017|https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description|
+|Transferring a Semantic Representation for Person Re-Identification and Search|CVPR2015||
+|Cascade Attention Network for Person Search: Both Image and Text-Image Similarity Selection|arXiv||
+
+## Dataset
+
+该领域主要只有两个数据集 **PRW** 以及 **CUHK-SYSU**
+
+看论文的时候还看到了 **CAMPUS** 以及 **EPFL**，好像是比较小的数据集，还没有仔细去看
+
+## Paper Reading Note
 
 ### Person Re-identification: Past, Present and Future
 
-又着重看了一遍和行人搜索有关的内容
+这篇文章是有关Re-ID的文献综述
 
 > jointly considering detection and re-ID confidence leads to higher person retrieval accuracy than using them separately
 
@@ -92,12 +122,3 @@ re-identification in the wild.* 以及 *Joint detection and identification featu
 * 上述过程可以被看作是一连串的建模过程
 
 > Learning to search for a person from a big region to a spe- cific person region within the gallery image can be deemed as a sequence modeling problem.
-
-## TODO
-* 准备学习的知识
-    * LSTM、ResNet-50、RNN
-    * Dictionary Learning、Domain Adaption、Siamese Network、Embedding、Cross Entropy
-
-* 公开课以及准备了解的资料
-    * cs231n
-    * UCI Machine Learning Repository
