@@ -473,3 +473,8 @@ X11Forwarding
 ```
 sudo apt install exfat-utils
 ```
+
+面试的流程套路
+---
+
+问候、感谢、介绍、祝福
