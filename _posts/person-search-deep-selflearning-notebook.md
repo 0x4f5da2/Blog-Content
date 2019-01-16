@@ -14,7 +14,7 @@ tags:
 
 ## Paper List (Person Search)
 
-|论文|来源|参考资料|
+|论文|来源|相关资料|
 |:-:|:-:|:-:|
 |A Discriminatively Learned Feature Embedding Based on Multi-Loss Fusion For Person Search|ICASSP 2018|-|
 |Correlation Based Identity Filter: An Efficient Framework for Person Search|ICIG2017|-|
@@ -26,11 +26,15 @@ tags:
 |Neural Person Search Machines|ICCV2017|-|
 |Person Re-identification in the Wild|CVPR2017|https://github.com/liangzheng06/PRW-baseline|
 |Person Search by Multi-Scale Matching|ECCV2018|-|
-|Person Search in Videos with One Portrait Through Visual and Temporal Links|ECCV2018|https://github.com/hqqasw/person-search-PPCC|
+|Person Search in Videos with One Portrait Through Visual and Temporal Links|ECCV2018|http://qqhuang.cn/projects/eccv18-person-search/ https://github.com/hqqasw/person-search-PPCC|
 |Person Search via A Mask-Guided Two-Stream CNN Model|ECCV 2018|-|
 |Person Search with Natural Language Description|CVPR2017|https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description|
 |Transferring a Semantic Representation for Person Re-Identification and Search|CVPR2015|-|
 |Cascade Attention Network for Person Search: Both Image and Text-Image Similarity Selection|arXiv|-|
+
+## Additional Paper List
+
+* **Beyond frontal faces: Improving person recognition using multiple cues.**
 
 ## Dataset
 
@@ -38,7 +42,11 @@ tags:
 
 看论文的时候还看到了 **CAMPUS** 以及 **EPFL**，好像是比较小的数据集，还没有仔细去看
 
-## Paper Reading Note
+## Additional Material
+
+* https://github.com/Cysu/open-reid
+
+## Selected Paper Note
 
 ### Person Re-identification: Past, Present and Future
 
@@ -122,3 +130,41 @@ re-identification in the wild.* 以及 *Joint detection and identification featu
 * 上述过程可以被看作是一连串的建模过程
 
 > Learning to search for a person from a big region to a spe- cific person region within the gallery image can be deemed as a sequence modeling problem.
+
+### Person Search in Videos with One Protrait Through Visual and Temporal Links
+
+感觉这篇文章所研究的问题和原先的论文所研究的问题有些许不同。论文中使用的是一个肖像照的图片。然后根据视觉线索以及时空联系来搜索对应的人。此外，不能问提出了一个较为庞大的数据集：**CSM（Cast Search in Movie）**。
+
+> However, they (re-identification and person recognition) are substantially different from the problem of **person search with one portrait**, which we aim to tackle in this work.
+
+
+
+~传统~ 普通的行人搜索，待搜索图片能够很好地代表照片库中地普遍的情况。因此，基于视觉的方法能够表现出较为良好的性能。
+
+本文工作的主要的难点在于消除单一的肖像照以及多样的照片库的差距,所使用的并不只是基于视觉的方法。
+
+> Hence, for both problems, the references in the gallery are often good representatives of the targets, and therefore the methods based on visual cues can perform reasonably well.
+
+>  Our task is to bridge a single portrait with a highly diverse set of samples, which is much more challenging and requires new techniques that go beyond visual matching.
+
+使用的是一种标签传递的方法，基本的思路是利用人物在帧间的领接关系（temporal links）以及视觉上的相似的关系（visvual links），是的对应的人的身份信息（identity information）能够广泛地传播。
+
+挑战：身份信息在大数据集上传播的可靠性
+
+* 贡献
+    * 系统性地研究了行人搜索在视频中的应用
+    * 提出了一个将视觉相似度（visual similarity）以及时空联系（temporal links / tracklet）结合在一起考虑的框架，能够进行更进一步（？）的搜索
+    * 提高了身份传播（？）的可靠性
+    * 制作**CSM**（Csat Search in Movies）数据集
+
+文章在Related Work中提到了**Label Propogation (Graph Transduction)**，该方法被广泛地应用于半监督的学习方法，是本文的主要理论基础之一。
+
+> It relies on the idea of building a graph in which nodes are data points (labeled and unlabeled) and the edges represent similarities between points so that labels can propagate from labeled points to unlabeled points.
+
+
+* CSM Dataset：
+    * 由大量电影中的片段组成
+    * 在尺度，光照，长度等方面都较为多样，很有挑战性
+    * Query Set 由 IMDB 上的演员的肖像照骗组成，去一部影片中的前十位演员
+
+
