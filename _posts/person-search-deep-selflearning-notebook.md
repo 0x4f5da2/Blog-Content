@@ -133,13 +133,13 @@ re-identification in the wild.* 以及 *Joint detection and identification featu
 
 ### Person Search in Videos with One Protrait Through Visual and Temporal Links
 
-感觉这篇文章所研究的问题和原先的论文所研究的问题有些许不同。论文中使用的是一个肖像照的图片。然后根据视觉线索以及时空联系来搜索对应的人。此外，不能问提出了一个较为庞大的数据集：**CSM（Cast Search in Movie）**。
+感觉这篇文章所研究的问题和原先的论文所研究的问题有些许不同。论文中使用的是一个肖像照的图片。然后根据视觉线索以及时空联系来搜索对应的人。此外，论文提出了一个较为庞大的数据集：**CSM（Cast Search in Movie）**。
 
 > However, they (re-identification and person recognition) are substantially different from the problem of **person search with one portrait**, which we aim to tackle in this work.
 
 
 
-~传统~ 普通的行人搜索，待搜索图片能够很好地代表照片库中地普遍的情况。因此，基于视觉的方法能够表现出较为良好的性能。
+~~传统~~普通的行人搜索，待搜索图片能够很好地代表照片库中地普遍的情况(论文原话)。因此，基于视觉的方法能够表现出较为良好的性能。
 
 本文工作的主要的难点在于消除单一的肖像照以及多样的照片库的差距,所使用的并不只是基于视觉的方法。
 
