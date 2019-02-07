@@ -478,3 +478,24 @@ sudo apt install exfat-utils
 ---
 
 问候、感谢、介绍、祝福
+
+macOS技巧
+---
+
+* 按住option点击左上角绿色按钮使当前窗口铺满工作区
+
+* 长按右上角绿色按钮建立新的工作区并分屏
+
+* 按住option + shift可以进行精细的音量调节
+
+* command + shift + `.`: 显示隐藏文件
+
+* 按住command可以拖动非顶层窗口
+
+* command + tab 然后放掉 tab 按下 1: Exposé
+
+* 长按字母键可以快速输入带有音标(?)的字母
+
+* command + tab 放掉tab 按下option 放掉command: 切换最小化的窗口到顶层
+
+[Mac键盘快捷键](https://support.apple.com/zh-cn/HT201236)
