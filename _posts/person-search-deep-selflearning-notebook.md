@@ -72,7 +72,7 @@ tags:
 
 * 使用docker镜像`nvidia/cuda:8.0-cudnn5-devel`搭建环境
     ```sh
-    docker run -it --name="person_search" -v ~/DockerVolume/person_search:/root/person_search nvidia/cuda:8.0-cudnn5-devel /bin/bash
+    docker run --runtime=nvidia -it --name="person_search" -v ~/DockerVolume/person_search:/root/person_search nvidia/cuda:8.0-cudnn5-devel /bin/bash
     ```
 
 * 换源，这里使用清华的源
