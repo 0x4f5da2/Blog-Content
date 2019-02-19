@@ -71,6 +71,9 @@ tags:
 最开始不会配环境，把配套的代码跑起来还费了一番功夫（主要还是太菜了🌚），记录一下免得以后会用
 
 * 使用docker镜像`nvidia/cuda:8.0-cudnn5-devel`搭建环境
+    ```sh
+    docker run -it --name="person_search" -v ~/DockerVolume/person_search:/root/person_search nvidia/cuda:8.0-cudnn5-devel /bin/bash
+    ```
 
 * 换源，这里使用清华的源
     ```

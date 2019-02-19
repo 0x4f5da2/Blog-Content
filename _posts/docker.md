@@ -67,6 +67,12 @@ sudo reboot
 # end 
 ```
 
+### Volume
+
+```
+docker run -v /host/dir:/container/dir debian
+```
+
 ### 将docker镜像保存成tar文件
 
 ```sh
