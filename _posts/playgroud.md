@@ -585,3 +585,7 @@ if __name__ == '__main__':
         if cv2.waitKey(1) == ord('q'):
             break
 ```
+
+其实是有办法使用本机的X Server，简单的尝试了一下，并不能简单的用起来,就写了上面这个
+
+[相关链接](https://medium.com/@SaravSun/running-gui-applications-inside-docker-containers-83d65c0db110)
