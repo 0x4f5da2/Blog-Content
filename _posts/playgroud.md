@@ -12,7 +12,7 @@ Python获取运行参数
 ---
 
 * 函数原型:  `def getopt(args, shortopts, longopts = [])：`
-* 使用短格式分析串"ho:" 。当一个选项只是表示开关状态时，即后面不带附加参数时，在分析串中写入选项字符。**当选项后面是带一个附加参数时，在分析串中写入选项字符同时后面加一个":" 号** 
+* 使用短格式分析串"ho:" 。当一个选项只是表示开关状态时，即后面不带附加参数时，在分析串中写入选项字符。**当选项后面是带一个附加参数时，在分析串中写入选项字符同时后面加一个":" 号**
 * 使用长格式分析串列表：["help", "output="] 。长格式串也可以有开关状态，即后面不跟"=" 号。如果跟一个等号则表示后面还应有一个参数 。这个长格式表示"help" 是一个开关选项；"output=" 则表示后面应该带一个参数
 
 Spring中的异常处理@ExceptionHandler
@@ -474,7 +474,7 @@ X11Forwarding
 sudo apt install exfat-utils
 ```
 
-面试的流程套路
+有礼貌的面试套路
 ---
 
 问候、感谢、介绍、祝福
@@ -499,3 +499,89 @@ macOS技巧
 * command + tab 放掉tab 按下option 放掉command: 切换最小化的窗口到顶层
 
 [Mac键盘快捷键](https://support.apple.com/zh-cn/HT201236)
+
+通过socket传送图片
+---
+
+使用场景不好描述，略
+
+```python
+import cv2
+import numpy as np
+import base64
+import socket
+import os
+
+
+class Sender:
+
+    def __init__(self, filename):
+        self.__server_socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+        try:
+            os.remove(filename)
+        except Exception:
+            pass
+        self.__server_socket.bind(filename)
+        print("binded")
+        self.__server_socket.listen(1)
+        self.__socket = self.__server_socket.accept()[0]
+        print("established")
+
+    def send(self, pic):
+        stat, encoded = cv2.imencode(".jpg", pic)
+        if stat:
+            to_send = base64.b64encode(encoded.tostring())
+            self.__socket.send(to_send)
+            self.__socket.send(b'\x00')
+
+
+class Receiver:
+
+    def __init__(self, filename):
+        self.__socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+        self.__socket.connect(filename)
+        self.__buff = b''
+
+    def receive(self):
+        while True:
+            data = self.__socket.recv(10240)
+            pos = data.find(b'\x00')
+            if pos == -1:
+                self.__buff += data
+            else:
+                self.__buff += data[0:pos]
+                to_decode = self.__buff
+                self.__buff = data[pos + 1:]
+                decoded = base64.b64decode(to_decode)
+                nparr = np.frombuffer(decoded, np.uint8)
+                frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+                return frame
+```
+
+```python
+# 发送
+import cv2
+import PictureTransmitter
+
+if __name__ == '__main__':
+    cap = cv2.VideoCapture(0)
+    sender = PictureTransmitter.Sender("./test.sock")
+    while True:
+        stat, frame = cap.read()
+        if stat:
+            sender.send(frame)
+```
+
+```python
+# 接收
+import cv2
+import PictureTransmitter
+
+if __name__ == '__main__':
+    receiver = PictureTransmitter.Receiver("test.sock")
+    while True:
+        frame = receiver.receive()
+        cv2.imshow("test", frame)
+        if cv2.waitKey(1) == ord('q'):
+            break
+```

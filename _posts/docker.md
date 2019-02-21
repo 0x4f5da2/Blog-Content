@@ -35,7 +35,9 @@ span.bb_spoiler:hover > span {
 
 <!-- more -->
 
-有点累了先休息一会 (￣▽￣)".....<span class="bb_spoiler"><span>然后休息了四个月（自从学了一些基础的命令之后觉得没有什么用就放在了一边）😅</span></span>（2018.10.11），
+有点累了先休息一会 (￣▽￣)".....
+
+<span class="bb_spoiler"><span>然后休息了四个月（更新于2018.10.11、自从学了一些基础的命令之后觉得没有什么用就放在了一边 ~~借口~~）😅</span></span>
 
 暑假实习的时候有接触了一些docker相关的内容，算是有了一些实战经验，然后总结了一下
 
@@ -126,3 +128,5 @@ docker export [container name] > [file name]
 # 以摄像头为例子
 docker run -it --device /dev/video0 ubuntu:16.04 /bin/bash
 ```
+
+之后就可以在docket容器中愉快地调用摄像头啦
