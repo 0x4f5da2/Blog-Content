@@ -589,3 +589,71 @@ if __name__ == '__main__':
 其实是有办法使用本机的X Server，简单的尝试了一下，并不能简单的用起来,就写了上面这个
 
 [相关链接](https://medium.com/@SaravSun/running-gui-applications-inside-docker-containers-83d65c0db110)
+
+CSS选择器
+---
+
+每一条css样式声明（定义）由两部分组成，形式如下：
+
+```
+选择器{
+    样式;
+}
+```
+
+标签选择器开头没有任何的符号、类选择器以`.`开头、ID选择器以`#`开头
+
+子选择器：使用`>`表示制定标签元素的第一代子元素
+
+```css
+/* example */
+.food>li{border: 1px solid red}
+```
+
+包含（后代）选择器：使用空格隔开，用于指定指定标签下的后代元素
+
+```css
+/* example */
+.fitst span{color: red;}
+```
+
+通用选择器：使用`*`指定，匹配所有元素
+
+```css
+/* example */
+* {color: red}
+```
+
+伪类选择符：使用冒号分隔，表示标签的某种状态
+
+```css
+/* example */
+span:hover{color: red}
+```
+
+分组选择符：使用`,`将选择器分开，多个标签定义相同的样式
+
+CSS的继承与权值
+---
+
+标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100。
+
+```css
+/* example */
+p{color:red;} /*权值为1*/
+p span{color:green;} /*权值为1+1=2*/
+.warning{color:white;} /*权值为10*/
+p span.warning{color:purple;} /*权值为1+1+10=12*/
+#footer .note p{color:yellow;} /*权值为100+10+1=111*/
+```
+
+比较特殊的权值：继承也有权值但很低：大概0.1。
+
+如果权值相同则后出现的样式会覆盖先前出现的样式
+
+使用`!important`设置最高权值
+
+```css
+/* example */
+p{color:red!important;}
+```
