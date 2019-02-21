@@ -3,6 +3,25 @@ title: Docker学习笔记
 date: 2018-06-10 23:12:19
 tags:
 ---
+<style type="text/css">
+span.bb_spoiler {
+	color: #000000;
+	background-color: #000000;
+	padding: 0px 8px;
+}
+
+span.bb_spoiler:hover {
+	color: #ffffff;
+}
+
+span.bb_spoiler > span {
+	visibility: hidden;
+}
+
+span.bb_spoiler:hover > span {
+	visibility: visible;
+}
+</style>
 
 容器
 ---
@@ -16,9 +35,7 @@ tags:
 
 <!-- more -->
 
-有点累了先休息一会 (￣▽￣)"
-
-休息了四个月😅（2018.10.11），
+有点累了先休息一会 (￣▽￣)".....<span class="bb_spoiler"><span>然后休息了四个月（自从学了一些基础的命令之后觉得没有什么用就放在了一边）😅</span></span>（2018.10.11），
 
 暑假实习的时候有接触了一些docker相关的内容，算是有了一些实战经验，然后总结了一下
 
@@ -82,7 +99,7 @@ docker save -o [文件名] [镜像名]
 ### 将容器提交成为镜像
 
 ```sh
-docker commit -m "commit message" -a "author info" [container_id]
+docker commit -m "commit message" -a "author info" <container_id> [<repostory>[/<tag>]]
 ```
 
 ### 加载保存成文件的docker镜像
@@ -102,3 +119,10 @@ docker export [container name] > [file name]
 ### docker账户相关文件位置
 
 ~/.docker/config.json
+
+### 在docker中使用摄像头或者其他设备
+
+```sh
+# 以摄像头为例子
+docker run -it --device /dev/video0 ubuntu:16.04 /bin/bash
+```
