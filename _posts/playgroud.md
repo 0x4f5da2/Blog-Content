@@ -657,3 +657,23 @@ p span.warning{color:purple;} /*权值为1+1+10=12*/
 /* example */
 p{color:red!important;}
 ```
+
+Ubuntu合盖不休眠
+---
+
+将`/etc/systemd/logind.conf`中的`#HandleLidSwitch=suspend`改成`HandleLidSwitch=ginore`
+
+Ubuntu安装最新的显卡驱动
+---
+
+跑一个Docker镜像需要用到cuda10，然后Ubuntu上自动安装的显卡驱动版本过低，并没有办法使用
+
+首先需要使用Software & Updates将下卡驱动切换的开源的版本（要是不切的话就玄学失败）
+
+然后执行如下语句
+
+```sh
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+sudo apt install nvidia-415
+```
