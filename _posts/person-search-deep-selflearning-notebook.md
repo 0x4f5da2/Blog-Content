@@ -31,6 +31,7 @@ tags:
 |Person Search with Natural Language Description|CVPR2017|https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description|
 |Transferring a Semantic Representation for Person Re-Identification and Search|CVPR2015|-|
 |Cascade Attention Network for Person Search: Both Image and Text-Image Similarity Selection|arXiv|-|
+|Person Search in a Scene by Jointly Modeling People Commonness and Person Uniqueness|ACM MM 2014|-|
 
 ## Additional Paper List
 
