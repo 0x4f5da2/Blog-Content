@@ -228,10 +228,18 @@ sudo mysql -u root
 
 ```sql
 drop user 'root'@'localhost';
-create user 'root'@'%' identified by 'password'
+create user 'root'@'%' identified by 'password';
 grant all privileges on *.* to 'root'@'%' with grant option;
 flush privileges
 ```
+
+```sql
+use mysql;
+update user set host='%' where user = 'root';
+flush privileges;
+```
+
+将`/etc/mysql/mysql.conf.d/mysqld.cnf`中的`bind-address`更改为`0.0.0.0`
 
 vim设置换行格式
 ---
@@ -474,11 +482,6 @@ X11Forwarding
 sudo apt install exfat-utils
 ```
 
-有礼貌的面试套路
----
-
-问候、感谢、介绍、祝福
-
 macOS技巧
 ---
 
@@ -670,10 +673,13 @@ Ubuntu安装最新的显卡驱动
 
 首先需要使用Software & Updates将下卡驱动切换的开源的版本（要是不切的话就玄学失败）
 
+如果单显卡的话就使用`sudo apt autoremove nvidia-driver-<old_version>`卸载旧的版本
+
 然后执行如下语句
 
 ```sh
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
-sudo apt install nvidia-415
+sudo apt install nvidia-driver-415  # 或者更高
+
 ```
