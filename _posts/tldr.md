@@ -683,3 +683,36 @@ sudo apt update
 sudo apt install nvidia-driver-415  # 或者更高
 
 ```
+
+在Ubuntu上安装QtDesigner
+---
+
+```sh
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple
+sudo apt install qt5-default qttools5-dev-tools
+```
+
+Jsoup使用概要
+---
+
+前一段时间帮别人使用Java写了个爬虫，用到了Jsoup
+
+```
+https://jsoup.org/cookbook/extracting-data/selector-syntax
+```
+
+OkHttp示例
+---
+
+```
+https://square.github.io/okhttp/#examples
+```
+
+从Git版本库中移除文件
+---
+
+在JetBrains家的IDE内置的Git里加了不需要的文件，发现没有并没有地方删除，只能使用命令行
+
+```sh
+git rm -r --cache <filename>
+```
