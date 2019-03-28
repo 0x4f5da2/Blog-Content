@@ -716,3 +716,10 @@ https://square.github.io/okhttp/#examples
 ```sh
 git rm -r --cache <filename>
 ```
+
+Python多线程
+---
+
+由于历史原因以及GIL的存在，Python的多线程并不能很好的利用现代的多核处理器，在同一时间，Python中只有一个线程处于运行状态。对于CPU密集型的任务，多线程可能反而会降低运算的性能。
+
+解决办法之一是使用多进程(import multiprocessing)，不过，它的引入会增加程序实现时线程间数据通讯和同步的困难。
