@@ -95,15 +95,16 @@ import static
 * 导入某个类中的静态的方法
 
 * example
+
     ```java
-    import static java.lang.System.out; 
-    import static java.lang.Integer.*; 
-    
-    public class TestStaticImport { 
-        public static void main(String[] args) { 
-            out.println(MAX_VALUE); 
-            out.println(toHexString(42)); 
-        } 
+    import static java.lang.System.out;
+    import static java.lang.Integer.*;
+
+    public class TestStaticImport {
+        public static void main(String[] args) {
+            out.println(MAX_VALUE);
+            out.println(toHexString(42));
+        }
     }
 
     ```
@@ -177,6 +178,7 @@ public static String getChampionName(Competition comp) throws IllegalArgumentExc
     throw new IllegalArgumentException("The value of param comp isn't available.");
 }
 ```
+
 可以写成
 
 ```java
@@ -216,6 +218,7 @@ try with resources
 ---
 
 ### installation
+
 ```sh
 sudo apt install mysql-server
 ```
@@ -261,6 +264,7 @@ Response.setHeader("Refresh","1000;URL=http://localhost:8080/servlet/example.htm
 
 maven中设置java版本
 ---
+
 ```xml
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -272,13 +276,14 @@ configuration Annotation Proessor not found in classpath
 ---
 
 引入如下依赖
+
 ```xml
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
-``` 
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-configuration-processor</artifactId>
+    <optional>true</optional>
+</dependency>
+```
 
 爬虫相关
 ---
@@ -351,6 +356,7 @@ public class Singleton {
 ```
 
 使用内部类
+
 ```java
 public class MyObject {
     private static class MyObjectHandler {
@@ -368,6 +374,7 @@ public class MyObject {
 使用static代码块（代码略）
 
 序列化相关：将对象序列化之后再进行反序列化
+
 ```java
 public class MyObject implements Serializable {
     private static final long serialVersionUID = 888L;
@@ -393,7 +400,7 @@ public class MyObject implements Serializable {
 使用Python镜像
 ---
 
-```
+```sh
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple ...
 ```
 
@@ -402,7 +409,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple ...
 
 由于pip的缓存机制尝试将希望安装库的整个文件缓存到内存，而在限制缓存大小的环境中如果安装包较大就会出现MemoryError的这个错误，可以加入如下参数规避。
 
-```
+```sh
 pip --no-cache-dir install ...
 ```
 
@@ -410,7 +417,7 @@ pip --no-cache-dir install ...
 virtualenv的基本操作
 ---
 
-```
+```sh
 virtualenv --no-site-packages -p <PYTHON_EXE> <DEST_DIR>
 
 source <DESTDIR>/bin/active
@@ -421,7 +428,7 @@ source <DESTDIR>/bin/active
 
 跑论文的实现在Re-ranking的时候应为内存不够爆炸了，调整了一下swapfile的大小
 
-```
+```sh
 sudo swapoff /swapfile
 sudo rm /swapfile
 sudo fallocate -l 8G /swapfile
@@ -429,6 +436,7 @@ chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 ```
+
 参考资料：
 
 [How To Add Swap Space on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-18-04)
@@ -723,3 +731,16 @@ Python多线程
 由于历史原因以及GIL的存在，Python的多线程并不能很好的利用现代的多核处理器，在同一时间，Python中只有一个线程处于运行状态。对于CPU密集型的任务，多线程可能反而会降低运算的性能。
 
 解决办法之一是使用多进程(import multiprocessing)，不过，它的引入会增加程序实现时线程间数据通讯和同步的困难。
+
+
+
+Swing Look and Feel
+---
+
+```java
+try {
+    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+} catch (Exception e) {
+    e.printStackTrace();
+}
+```
