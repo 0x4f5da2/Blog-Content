@@ -606,7 +606,7 @@ CSS选择器
 
 每一条css样式声明（定义）由两部分组成，形式如下：
 
-```
+```css
 选择器{
     样式;
 }
@@ -705,16 +705,12 @@ Jsoup使用概要
 
 前一段时间帮别人使用Java写了个爬虫，用到了Jsoup
 
-```
-https://jsoup.org/cookbook/extracting-data/selector-syntax
-```
+[JSoupExamples](https://jsoup.org/cookbook/extracting-data/selector-syntax)
 
 OkHttp示例
 ---
 
-```
-https://square.github.io/okhttp/#examples
-```
+[OkHttpExamples](https://square.github.io/okhttp/#examples)
 
 从Git版本库中移除文件
 ---
@@ -732,8 +728,6 @@ Python多线程
 
 解决办法之一是使用多进程(import multiprocessing)，不过，它的引入会增加程序实现时线程间数据通讯和同步的困难。
 
-
-
 Swing Look and Feel
 ---
 
@@ -743,4 +737,12 @@ try {
 } catch (Exception e) {
     e.printStackTrace();
 }
+```
+
+Ubuntu笔记本电源管理
+---
+
+```sh
+sudo apt install tlp
+sudo tlp start
 ```
