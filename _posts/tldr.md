@@ -746,3 +746,17 @@ Ubuntu笔记本电源管理
 sudo apt install tlp
 sudo tlp start
 ```
+
+Ubuntu显示安装过的包
+---
+
+```sh
+apt list --installed
+```
+
+反编译APK
+---
+
+* apktool
+
+* dex2jar
