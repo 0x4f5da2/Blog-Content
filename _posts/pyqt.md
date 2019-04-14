@@ -10,7 +10,7 @@ tags:
 
 ## 相关文档
 
-PyQt官方的文档不是特别的全面，有的部分甚至还是TODO，然后发现Qt的另外一个Python接口PySide2的API和PyQt基本上是一样的，所以也能PySide2的文档也能看。 ~~为什么我当初要用PyQt~~
+PyQt官方的文档不是特别的全面，有的部分甚至还是TODO，然后发现Qt的另外一个Python接口PySide2的API和PyQt基本上是一样的，所以也能PySide2的文档也能看。 ~~PySide现在是Qt官方在维护，为什么我当初要用PyQt（哭瞎）~~
 
 * [PyQt5 Documentation](https://www.riverbankcomputing.com/static/Docs/PyQt5/)
 
@@ -18,7 +18,7 @@ PyQt官方的文档不是特别的全面，有的部分甚至还是TODO，然后
 
 ## 信号槽
 
-要使用信号槽，必须在代码中包含以下语句
+要使用信号槽，必须在代码中包含以下语句，不过`pyuic5`生成的代码一般都有所以不用去管
 
 ```python
 QtCore.QMetaObject.connectSlotsByName(<CLASS_NAME>)
@@ -29,7 +29,7 @@ QtCore.QMetaObject.connectSlotsByName(<CLASS_NAME>)
 * 编码
 
     ```python
-    self.chechBox.clicked['bool'].connect(self.label.setVisible)
+    self.chechBox.clicked.connect(self.label.setVisible)
     ```
 
 * 注解
