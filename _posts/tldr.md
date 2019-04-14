@@ -760,3 +760,39 @@ apt list --installed
 * apktool
 
 * dex2jar
+
+音频文件滤波，感觉挺好玩的
+---
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy import signal
+from scipy.io import wavfile
+
+if __name__ == '__main__':
+    f, data = wavfile.read("foo.wav")
+    print(f, data)
+    # ffmpeg -i <input_file> -vn -acodec pcm_s16le -ac 1 -ar 44100 -f wav foo.wav
+    lowpass_critical_f = 500
+    highpass_critical_f = 500
+
+    data = data * 1.0 / np.max(data)
+    x = np.arange(0, len(data)) * 1 / f
+
+    plt.plot(x, data)
+    plt.show()
+
+    sos = signal.butter(10, lowpass_critical_f, btype="lowpass", fs=f, output="sos")
+    lowpass_filtered = signal.sosfilt(sos, data)
+    plt.plot(x, lowpass_filtered)
+    plt.show()
+
+    sos = signal.butter(10, highpass_critical_f, btype="highpass", fs=f, output="sos")
+    highpass_filtered = signal.sosfilt(sos, data)
+    plt.plot(x, highpass_filtered)
+    plt.show()
+
+    wavfile.write("highpass.wav", f, highpass_filtered)
+    wavfile.write("lowpass.wav", f, lowpass_filtered)
+```
