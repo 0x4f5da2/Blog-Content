@@ -761,6 +761,11 @@ apt list --installed
 
 * dex2jar
 
+VMware Fusion Key
+---
+
+7HYY8-Z8WWY-F1MAN-ECKNY-LUXYX
+
 音频文件滤波，感觉挺好玩的
 ---
 
