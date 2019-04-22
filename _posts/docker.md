@@ -32,6 +32,9 @@ span.bb_spoiler:hover > span {
 * 容器的性能损耗非常低
 * 容器具有可移植性
 * 容器适用于微服务架构
+* 主机的内核与容器共享
+* 容器中的进程与主机自身等价
+
 
 <!-- more -->
 
@@ -129,3 +132,10 @@ docker run -it --device /dev/video0 ubuntu:16.04 /bin/bash
 ```
 
 之后就可以在docket容器中愉快地调用摄像头啦
+
+一些需要注意的问题
+---
+
+* 在使用Dockerfile进行构建的时候，最好将Dockerfile以及相关文件放进一个目录中。这样做的原因是Docker在进行构建的时候会把Docker所在的目录打包成为一个tar文件，传递给Docker的守护进程。
+
+* 
