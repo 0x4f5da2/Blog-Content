@@ -171,4 +171,9 @@ re-identification in the wild.* 以及 *Joint detection and identification featu
     * 在尺度，光照，长度等方面都较为多样，很有挑战性
     * Query Set 由 IMDB 上的演员的肖像照骗组成，去一部影片中的前十位演员
 
+## Correlation Based Identity Filter...
+
+* 将行人搜索重新定义为一个回归任务，旨在减少检测和重识别之间的累积误差，使用回归来共同处理检测以及识别
+
+* 在CUHK-SYSU上进行的测试，效果一般
 
