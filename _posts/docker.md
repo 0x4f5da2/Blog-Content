@@ -35,7 +35,6 @@ span.bb_spoiler:hover > span {
 * 主机的内核与容器共享
 * 容器中的进程与主机自身等价
 
-
 <!-- more -->
 
 <span class="bb_spoiler"><span>有点累了先休息一会 (￣▽￣)".....然后休息了好几个月，自从学了一些基础的命令之后觉得没有什么用就放在了一边 <del>借口</del>）😅</span></span>
@@ -66,7 +65,6 @@ docker build -t %IMAGE% .
 docker push %IMAGE%
 ```
 
-
 ### 在docker容器以及host之间传输文件
 
 * 使用`docker cp <path> <containerName>:<path>`从宿主机复制文件出来
@@ -87,9 +85,11 @@ sudo reboot
 # end 
 ```
 
-### Volume
+### 挂载卷
 
-```
+还有两种方法进行卷挂在来着，但是因为现在主要炼丹，并用不到，还是下面的更加常用一些
+
+```sh
 docker run -v /host/dir:/container/dir debian
 ```
 
@@ -121,7 +121,6 @@ docker export [container name] > [file name]  # 使用docker import倒入
 
 ```sh
 docker pause <container_id>  # 暂停容器中的所有进程
-
 docker unpause <container_id>  # 重启
 ```
 
@@ -156,14 +155,13 @@ docker run -P -d radis  # 在host开一个高端口映射到容器中
 docker port <container_id>  # 查看已分配的端口
 ```
 
-## 其他
+### 其他
 
 ```sh
 docker top <container_id>  # 类似ps，至显示容器内的进程，默认`-ef`
 docker tag <container_id> <new_name>
 docker log [-t] [-f] <container_id/container_name>  # -t timestamp, -f stream log
 ```
-
 
 一些需要注意的问题
 ---
