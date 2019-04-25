@@ -113,6 +113,34 @@ tags:
 
 * 按照Github上对应的readme进行编译，填入docker镜像中cuDNN的路径如下：`cmake .. -DUSE_MPI=ON -DCUDNN_INCLUDE=/usr/include -DCUDNN_LIBRARY=/usr/lib/x86_64-linux-gnu/libcudnn.so`
 
+
+#### 使用其他损失函数的挑战
+
+* 传统的pair wise或者是triplet distance的缺点：每次只对比几个数据，时间复杂度较高，大约为平方级别的复杂度。
+
+* 采样的策略会随着gallery的增大而变得困难
+
+* 若使用softmax进行分类，随着softmax矩阵的增大，收敛将会变得困难。
+
+#### 解决上述问题的方案
+
+* 提出OIM损失
+
+    * 维护有所有有标签的行人的特征的一个表
+
+
+### Resnet
+
+* 将Fast R-CNN的VGG16模型替换为ResNet-101将会获得28%的相对提升
+
+* 更深的网络并不能带来更好的效果
+
+* Main Idea
+
+    * 令：H(x)为几层网络x->y的映射，x为输入 => F(x) = H(x) - x
+
+    * 假设：F(x)相对于H(x)更好优化
+
 ### Neural Person Search Machine
 
 * 不同于原先的“两步式”的方法，提出了一种递归缩减画面中的查找范围的一种方法

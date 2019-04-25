@@ -39,8 +39,6 @@ span.bb_spoiler:hover > span {
 
 <span class="bb_spoiler"><span>有点累了先休息一会 (￣▽￣)".....然后休息了好几个月，自从学了一些基础的命令之后觉得没有什么用就放在了一边 <del>借口</del>）😅</span></span>
 
-暑假实习的时候有接触了一些docker相关的内容，算是有了一些实战经验，然后总结了一下
-
 一些常用的操作
 ---
 
