@@ -810,3 +810,9 @@ if __name__ == '__main__':
     wavfile.write("highpass.wav", f, highpass_filtered)
     wavfile.write("lowpass.wav", f, lowpass_filtered)
 ```
+
+prototxt可视化
+---
+
+[http://ethereon.github.io/netscope/#/editor](http://ethereon.github.io/netscope/#/editor)
+
