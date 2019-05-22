@@ -199,9 +199,49 @@ re-identification in the wild.* 以及 *Joint detection and identification featu
     * 在尺度，光照，长度等方面都较为多样，很有挑战性
     * Query Set 由 IMDB 上的演员的肖像照骗组成，去一部影片中的前十位演员
 
-## Correlation Based Identity Filter...
+### Correlation Based Identity Filter...
 
 * 将行人搜索重新定义为一个回归任务，旨在减少检测和重识别之间的累积误差，使用回归来共同处理检测以及识别
 
 * 在CUHK-SYSU上进行的测试，效果一般
+
+## 自定义Python Caffe Layer
+
+```python
+import caffe
+
+class My_Custom_Layer(caffe.Layer):
+    def setup(self, bottom, top):
+        pass
+        
+    def forward(self, bottom, top):
+        pass
+        
+    def reshape(self, bottom, top):
+        pass
+
+    def backward(self, bottom, top):
+        pass
+```
+
+* `setup`: 在整个生命周期中只被调用一次，用于读取参数并初始化固定的内存等
+
+* `reshape`: 每次前向传播的时候调用
+
+* `forward`: 用于前向传播的计算
+
+* `backword`: 用于反向传播的计算，如梯度等
+
+更多相关参考：
+
+* https://gist.github.com/rafaspadilha/a67008cc3bd93bc2c1fc368c363ee363
+
+* https://github.com/BVLC/caffe/wiki/Development
+
+* https://github.com/BVLC/caffe/issues/1385
+
+* https://github.com/BVLC/caffe/pull/594
+
+
+
 
