@@ -816,3 +816,14 @@ prototxt可视化
 
 [http://ethereon.github.io/netscope/#/editor](http://ethereon.github.io/netscope/#/editor)
 
+永久挂载某分区
+---
+
+```bash
+# 使用下述命令找到所需要挂载的分区的UUID
+sudo blkid
+
+sudo echo "UUID=<UUID> <mounting point> <file system> defaults 0 2
+```
+
+参考：https://askubuntu.com/questions/45607/how-to-mount-partition-permanently
