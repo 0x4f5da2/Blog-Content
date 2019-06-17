@@ -110,3 +110,20 @@ class InfoWorker(QRunnable):
 ## 其他
 
 * 使用`QApplication.processEvent()`刷新页面，不过并不推荐在执行长时间操作的时候不断调用该函数。
+
+## 参考资料及相关项目
+
+* https://github.com/mfitzp/15-minute-apps
+
+* https://github.com/PyQt5/PyQt
+
+* https://github.com/Fabien-B/SerialImageCroper
+
+* https://github.com/cxinping/pyqt5
+
+* https://github.com/cosven/FeelUOwn
+
+
+
+
+
