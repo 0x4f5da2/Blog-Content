@@ -161,6 +161,11 @@ docker tag <container_id> <new_name>
 docker log [-t] [-f] <container_id/container_name>  # -t timestamp, -f stream log
 ```
 
+```sh
+docker run -u $(id -u):$(id -g) -v ... args
+# 映射用于以避免以root创建的文件
+```
+
 一些需要注意的问题
 ---
 
