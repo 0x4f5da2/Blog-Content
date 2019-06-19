@@ -827,3 +827,24 @@ sudo echo "UUID=<UUID> <mounting point> <file system> defaults 0 2
 ```
 
 参考：https://askubuntu.com/questions/45607/how-to-mount-partition-permanently
+
+读取word文件里的文字
+---
+
+```xml
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.0.1</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.0.1</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-scratchpad</artifactId>
+    <version>4.0.1</version>
+</dependency>
+```
