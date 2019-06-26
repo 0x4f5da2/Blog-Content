@@ -848,3 +848,42 @@ sudo echo "UUID=<UUID> <mounting point> <file system> defaults 0 2
     <version>4.0.1</version>
 </dependency>
 ```
+
+自定义Python Caffe Layer
+---
+
+```python
+import caffe
+
+class My_Custom_Layer(caffe.Layer):
+    def setup(self, bottom, top):
+        pass
+        
+    def forward(self, bottom, top):
+        pass
+        
+    def reshape(self, bottom, top):
+        pass
+
+    def backward(self, bottom, top):
+        pass
+```
+
+* `setup`: 在整个生命周期中只被调用一次，用于读取参数并初始化固定的内存等
+
+* `reshape`: 每次前向传播的时候调用
+
+* `forward`: 用于前向传播的计算
+
+* `backword`: 用于反向传播的计算，如梯度等
+
+更多相关参考：
+
+* https://gist.github.com/rafaspadilha/a67008cc3bd93bc2c1fc368c363ee363
+
+* https://github.com/BVLC/caffe/wiki/Development
+
+* https://github.com/BVLC/caffe/issues/1385
+
+* https://github.com/BVLC/caffe/pull/594
+
