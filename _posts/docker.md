@@ -42,6 +42,14 @@ span.bb_spoiler:hover > span {
 一些常用的操作
 ---
 
+### 安装docker
+
+```sh
+curl https://get.docker.com > install_docker.sh
+chmod 777 install_docker.sh
+./install_docker.sh
+```
+
 ### dockerfile
 
 简单的来说就是用来构建镜像的时候用的，下面是一个制作带有`kubectl`命令的简单的例子：

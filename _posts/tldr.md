@@ -887,3 +887,22 @@ class My_Custom_Layer(caffe.Layer):
 
 * https://github.com/BVLC/caffe/pull/594
 
+Ubuntu pip升级
+---
+
+```sh
+pip3 install --upgrade pip
+```
+
+这个时候如果不出意外的话，会出现以下报错
+
+```
+Traceback (most recent call last):
+  File "/usr/bin/pip", line 9, in <module>
+    from pip import main
+ImportError: cannot import name 'main'
+```
+
+但是可以通过`python3 -m pip ...`使用
+
+将`/usr/bin/pip3`中的`from pip import main`修改为`from pip._internal import main`即可
