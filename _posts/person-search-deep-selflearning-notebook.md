@@ -14,7 +14,7 @@ tags:
 
 ## Paper List of Person Search
 
-|论文|来源|相关资料|
+|Paper|Source|Related Material|
 |:-:|:-:|:-:|
 |A Discriminatively Learned Feature Embedding Based on Multi-Loss Fusion For Person Search|ICASSP 2018|-|
 |Correlation Based Identity Filter: An Efficient Framework for Person Search|ICIG2017|-|
@@ -37,6 +37,22 @@ tags:
 |Learning Context Graph for Person Search|CVPR2019 Oral|https://github.com/sjtuzq/person_search_gcn|
 |Fusion-Attention Network for person search with free-form natural language|PRL|-|
 |Query-guided End-to-End Person Search|CVPR2019|-|
+|Partially Separated Networks for Person Search|PCM2018|-|
+|A cascaded multitask network with deformable spatial transform on person search|PRCV2018|-|
+|Multilevel Collaborative Attention Network for Person Search|ACCV2018|-|
+|Enhancing Person Retrieval with Joint Person Detection, Attribute Learning, and Identification|PCM2018|-|
+|Spatial Invariant Person Search Network|PRCV2018|-|
+|Enhanced Deep Feature Representation for Person Search|CCCV2018|-|
+
+## PoI List
+
+|Paper|Source|Related Material|
+|:-:|:-:|:-:|
+|Attribute-based Person Retrieval and Search in Video Sequences|AVSS2018|-|
+|Fast Open-World Person Re-Identification|Image Processing|-|
+|Re-ID done right: towards good practices for person re-identification|arXiv|-|
+|Weakly Supervised Person Re-Identification|CVPR2019|-|
+|Multimodal clothing recognition for semantic search in unconstrained surveillance imagery|VCIP|-|
 
 ## Dataset
 
@@ -44,41 +60,7 @@ tags:
 
 ## Environment Configuration of 'Joint Detection and Identification Feature Learning for Person Search'
 
-* 使用docker镜像`nvidia/cuda:8.0-cudnn5-devel`搭建环境
-    ```sh
-    docker run --runtime=nvidia -it --name="person_search" -v ~/DockerVolume/person_search:/root/person_search nvidia/cuda:8.0-cudnn5-devel /bin/bash
-    ```
-
-* 换源，使用了清华的源，其他的也可以
-    ```
-    # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
-    deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
-    # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
-    deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
-    # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
-    deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
-    # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
-    deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
-    # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
-
-    # 预发布软件源，不建议启用
-    # deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
-    # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
-    ```
-
-* 安装环境
-    ```sh
-    apt update
-    # 安装我最喜欢的oh-my-zsh
-    apt install zsh curl git vim
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    # caffe相关编译环境
-    apt install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev libprotobuf-dev libboost-all-dev libatlas-base-dev libgflags-dev libgoogle-glog-dev liblmdb-dev cmake libopenmpi-dev unzip protobuf-compiler python-pip python-tk
-    # 安装编译/运行时所需的Python库
-    pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy cython easydict pyyaml protobuf opencv-python mpi4py matplotlib==2.2.3 scikit-image scikit-learn
-
-    # 随后按照对应代码仓库的说明编译安装
-    ```
+做了docker镜像：https://hub.docker.com/r/4f5da2/person_search**
 
 ### 需要注意的一些地方
 
@@ -87,8 +69,6 @@ tags:
 * 由于protobuf版本发生变化，需在`lib/fast_rcnn/train.py`中增加一行`import google.protobuf.text_format`
 
 * 按照Github上对应的readme进行编译，填入docker镜像中cuDNN的路径如下：`cmake .. -DUSE_MPI=ON -DCUDNN_INCLUDE=/usr/include -DCUDNN_LIBRARY=/usr/lib/x86_64-linux-gnu/libcudnn.so`
-
-**Update：做了docker镜像：https://hub.docker.com/r/4f5da2/person_search**
 
 ## Additional Related Material
 
