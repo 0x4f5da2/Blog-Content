@@ -60,7 +60,7 @@ tags:
 
 ## Environment Configuration of 'Joint Detection and Identification Feature Learning for Person Search'
 
-做了docker镜像：https://hub.docker.com/r/4f5da2/person_search**
+做了docker镜像：https://hub.docker.com/r/4f5da2/person_search
 
 ### 需要注意的一些地方
 

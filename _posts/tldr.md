@@ -906,3 +906,17 @@ ImportError: cannot import name 'main'
 但是可以通过`python3 -m pip ...`使用
 
 将`/usr/bin/pip3`中的`from pip import main`修改为`from pip._internal import main`即可
+
+keras按需使用显存
+---
+
+```python
+import tensorflow as tf
+import keras.backend.tensorflow_backend as ktf
+
+config = tf.ConfigProto()
+config.gpu_options.allow_growth=True
+sess = tf.Session(config=config)
+
+ktf.set_session(sess)
+```
