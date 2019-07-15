@@ -233,7 +233,7 @@ sudo mysql -u root
 drop user 'root'@'localhost';
 create user 'root'@'%' identified by 'password';
 grant all privileges on *.* to 'root'@'%' with grant option;
-flush privileges
+flush privileges;
 ```
 
 ```sql
@@ -920,3 +920,10 @@ sess = tf.Session(config=config)
 
 ktf.set_session(sess)
 ```
+
+使用树莓派安装Seafile的一些坑
+---
+
+* 使用python-pil而不是python-imaging
+
+* 使用urllib3==1.22
