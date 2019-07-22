@@ -481,6 +481,8 @@ X11Forwarding
 
 因此：感觉并没有什么用🌚
 
+https://fabianlee.org/2018/10/14/ubuntu-x11-forwarding-to-view-gui-applications-running-on-server-hosts/
+
 在Ubuntu中使用ExFAT文件系统
 ---
 
@@ -823,8 +825,10 @@ prototxt可视化
 # 使用下述命令找到所需要挂载的分区的UUID
 sudo blkid
 
-sudo echo "UUID=<UUID> <mounting point> <file system> defaults 0 2
+sudo echo "UUID=<UUID> <mounting point> <file system> defaults 0 2" >> /etc/fstab
 ```
+
+或者使用Ubuntu自带的Disk Utility也可以达到相同的效果
 
 参考：https://askubuntu.com/questions/45607/how-to-mount-partition-permanently
 
