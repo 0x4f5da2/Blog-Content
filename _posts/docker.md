@@ -37,7 +37,7 @@ span.bb_spoiler:hover > span {
 
 <!-- more -->
 
-<span class="bb_spoiler"><span>有点累了先休息一会 (￣▽￣)".....然后休息了好几个月，自从学了一些基础的命令之后觉得没有什么用就放在了一边 <del>借口</del>）😅</span></span>
+<span class="bb_spoiler"><span>有点累了先休息一会 (￣▽￣)".....然后休息了好几个月，自从学了一些基础的命令之后觉得没有什么用就放在了一边 <del>借口</del>）😅然后后来实习的时候又感觉好有用就又捡回来了</span></span>
 
 一些常用的操作
 ---
@@ -172,6 +172,11 @@ docker log [-t] [-f] <container_id/container_name>  # -t timestamp, -f stream lo
 ```sh
 docker run -u $(id -u):$(id -g) -v ... args
 # 映射用于以避免以root创建的文件
+```
+
+```sh
+docker system prune
+# 删除无用的文件，包括已经停止但是可能有用的容器
 ```
 
 一些需要注意的问题
