@@ -43,6 +43,7 @@ tags:
 |Enhancing Person Retrieval with Joint Person Detection, Attribute Learning, and Identification|PCM2018|-|
 |Spatial Invariant Person Search Network|PRCV2018|-|
 |Enhanced Deep Feature Representation for Person Search|CCCV2018|-|
+|FMT: fusing multi-task convolutional neural network for person search|Multimedia Tools and Applications|-|
 
 ## PoI List
 
