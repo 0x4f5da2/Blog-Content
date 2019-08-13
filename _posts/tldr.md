@@ -4,7 +4,7 @@ date: 2018-10-11 15:27:19
 tags:
 ---
 
-A naive wiki for myself 😀
+给自己看的杂七杂八的东西 | A naive wiki for myself 😀
 
 <!-- more -->
 
@@ -946,3 +946,11 @@ Host pi
 ```
 
 其中`id-rsa`使用`ssh-keygen`生成，随后使用`ssh-copy-id <username>@<ip or hostname>`将公钥拷贝到目标计算机上即可
+
+
+LaTeX相关的文档
+---
+
+https://liam.page/2014/09/08/latex-introduction/#TeX_
+
+https://liam.page/texlive/
