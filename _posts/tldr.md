@@ -891,6 +891,9 @@ class My_Custom_Layer(caffe.Layer):
 
 * https://github.com/BVLC/caffe/pull/594
 
+示例：
+* https://github.com/ydwen/caffe-face/commit/0437af585da5ef7c8b94f6b621546160223c276c
+
 Ubuntu pip升级
 ---
 
