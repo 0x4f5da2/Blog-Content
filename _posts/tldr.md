@@ -900,6 +900,9 @@ class My_Custom_Layer(caffe.Layer):
 
 * https://zhuanlan.zhihu.com/p/21921078
 
+In-Place：
+* https://intellipaat.com/community/19327/when-to-use-in-place-layers-in-caffe
+
 Ubuntu pip升级
 ---
 
