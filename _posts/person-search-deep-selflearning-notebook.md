@@ -36,7 +36,7 @@ tags:
 |End-to-End Detection and Re-identification Integrated Net for Person Search|arXiv|-|
 |Learning Context Graph for Person Search|CVPR2019 Oral|https://github.com/sjtuzq/person_search_gcn|
 |Fusion-Attention Network for person search with free-form natural language|PRL|-|
-|Query-guided End-to-End Person Search|CVPR2019|-|
+|Query-guided End-to-End Person Search|CVPR2019|https://github.com/munjalbharti/Query-guided-End-to-End-Person-Search|
 |Partially Separated Networks for Person Search|PCM2018|-|
 |A cascaded multitask network with deformable spatial transform on person search|PRCV2018|-|
 |Multilevel Collaborative Attention Network for Person Search|ACCV2018|-|
