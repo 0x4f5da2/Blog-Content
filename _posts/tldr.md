@@ -853,8 +853,10 @@ sudo echo "UUID=<UUID> <mounting point> <file system> defaults 0 2" >> /etc/fsta
 </dependency>
 ```
 
-自定义Python Caffe Layer
+Caffe相关内容
 ---
+
+自定义Python Caffe Layer
 
 ```python
 import caffe
@@ -893,6 +895,10 @@ class My_Custom_Layer(caffe.Layer):
 
 示例：
 * https://github.com/ydwen/caffe-face/commit/0437af585da5ef7c8b94f6b621546160223c276c
+
+数学函数相关：
+
+* https://zhuanlan.zhihu.com/p/21921078
 
 Ubuntu pip升级
 ---
