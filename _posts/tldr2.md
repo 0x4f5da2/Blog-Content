@@ -52,3 +52,12 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/ && \
 conda config --set show_channel_urls yes
 ```
+
+
+nginx 设置重定向
+---
+
+使用`sudo nginx -s reload`重新载入后，出现如下错误，`unknown directive "if($host" in ...`
+
+原因在于nginx对于语法的检测比较严格，`if`以及`(`和变量符号周围都需要有空格
+

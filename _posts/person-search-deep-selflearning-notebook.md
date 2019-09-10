@@ -42,7 +42,6 @@ tags:
 |Multilevel Collaborative Attention Network for Person Search|ACCV2018|-|
 |Enhancing Person Retrieval with Joint Person Detection, Attribute Learning, and Identification|PCM2018|-|
 |Spatial Invariant Person Search Network|PRCV2018|https://github.com/liliangqi/person_search|
-|Enhanced Deep Feature Representation for Person Search|CCCV2018|-|
 |FMT: fusing multi-task convolutional neural network for person search|Multimedia Tools and Applications|-|
 
 ## PoI List
