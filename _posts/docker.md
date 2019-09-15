@@ -161,6 +161,26 @@ docker run -P -d radis  # 在host开一个高端口映射到容器中
 docker port <container_id>  # 查看已分配的端口
 ```
 
+### 在Docker容器中使用图形界面
+
+虽然不是很懂，但是好像能用了(￣▽￣)"
+
+```sh
+xhost +local:docker
+XSOCK=/tmp/.X11-unix
+XAUTH=/tmp/.docker.xauth
+xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
+
+docker run --runtime=nvidia -it -v ~/DockerVolume/CUDA:/workspace -e DISPLAY=$DISPLAY -v $XSOCK:$XSOCK -v $XAUTH:$XAUTH -e XAUTHORITY=$XAUTH nvidia/cuda:10.1-cudnn7-devel bash
+```
+
+随后可以使用如下命令测试效果
+
+```sh
+apt install x11-apps
+xeyes
+```
+
 ### 其他
 
 ```sh
