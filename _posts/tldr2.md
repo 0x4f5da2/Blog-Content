@@ -87,3 +87,11 @@ nginx 设置重定向
 
 原因在于nginx对于语法的检测比较严格，`if`以及`(`和变量符号周围都需要有空格
 
+
+使用dpkg安装deb软件包
+---
+
+```sh
+dpkg -i PACKAGE_NAME.deb
+```
+
