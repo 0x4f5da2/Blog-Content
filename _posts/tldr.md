@@ -674,7 +674,7 @@ p{color:red!important;}
 Ubuntu合盖不休眠
 ---
 
-将`/etc/systemd/logind.conf`中的`#HandleLidSwitch=suspend`改成`HandleLidSwitch=ginore`
+将`/etc/systemd/logind.conf`中的`#HandleLidSwitch=suspend`改成`HandleLidSwitch=ignore`
 
 Ubuntu安装最新的显卡驱动
 ---
