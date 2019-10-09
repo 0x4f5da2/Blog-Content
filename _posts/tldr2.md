@@ -64,6 +64,7 @@ Anaconda相关
 * 更换conda软件源
 
 `.condarc`
+
 ```sh
 default_channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
@@ -79,14 +80,12 @@ channels:
 show_channel_urls: true
 ```
 
-
 nginx 设置重定向
 ---
 
 使用`sudo nginx -s reload`重新载入后，出现如下错误，`unknown directive "if($host" in ...`
 
 原因在于nginx对于语法的检测比较严格，`if`以及`(`和变量符号周围都需要有空格
-
 
 使用dpkg安装deb软件包
 ---
@@ -95,3 +94,16 @@ nginx 设置重定向
 dpkg -i PACKAGE_NAME.deb
 ```
 
+Python Exit Hanlders
+---
+
+在程序退出的时候执行
+
+```python
+def cleanup():
+    print 'Terminating BlobFetcher'
+    self._prefetch_process.terminate()
+    self._prefetch_process.join()
+import atexit
+atexit.register(cleanup)
+```
