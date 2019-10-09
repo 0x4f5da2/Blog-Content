@@ -107,3 +107,8 @@ def cleanup():
 import atexit
 atexit.register(cleanup)
 ```
+
+Numpy索引相关
+---
+
+https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html
