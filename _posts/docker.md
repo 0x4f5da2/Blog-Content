@@ -199,6 +199,11 @@ docker system prune
 # 删除无用的文件，包括已经停止但是可能有用的容器
 ```
 
+```sh
+docker run ... -h HOST_NAME ...
+# 使用HOST_NAME代替默认的容器ID
+```
+
 一些需要注意的问题
 ---
 
