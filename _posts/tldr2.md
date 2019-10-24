@@ -108,7 +108,9 @@ import atexit
 atexit.register(cleanup)
 ```
 
-Numpy索引相关
+Numpy高级操作
 ---
 
 https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html
+
+https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html
