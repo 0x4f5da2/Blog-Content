@@ -30,21 +30,19 @@ tags:
 |Person Search via A Mask-Guided Two-Stream CNN Model|ECCV 2018|-|
 |Person Search with Natural Language Description|CVPR2017|https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description|
 |Transferring a Semantic Representation for Person Re-Identification and Search|CVPR2015|-|
-|Cascade Attention Network for Person Search: Both Image and Text-Image Similarity Selection|arXiv|-|
 |Person Search in a Scene by Jointly Modeling People Commonness and Person Uniqueness|ACM MM 2014|-|
 |RCAA: Relational context-aware agents for person search|ECCV2018|-|
 |End-to-End Detection and Re-identification Integrated Net for Person Search|arXiv|-|
 |Learning Context Graph for Person Search|CVPR2019 Oral|https://github.com/sjtuzq/person_search_gcn|
-|Fusion-Attention Network for person search with free-form natural language|PRL|-|
 |Query-guided End-to-End Person Search|CVPR2019|https://github.com/munjalbharti/Query-guided-End-to-End-Person-Search|
 |Partially Separated Networks for Person Search|PCM2018|-|
-|A cascaded multitask network with deformable spatial transform on person search|PRCV2018|-|
+|A cascaded multitask network with deformable spatial transform on person search|International Journal of Advanced Robotic Systems|-|
 |Multilevel Collaborative Attention Network for Person Search|ACCV2018|-|
 |Enhancing Person Retrieval with Joint Person Detection, Attribute Learning, and Identification|PCM2018|-|
 |Spatial Invariant Person Search Network|PRCV2018|https://github.com/liliangqi/person_search|
 |FMT: fusing multi-task convolutional neural network for person search|Multimedia Tools and Applications|-|
 
-## PoI List
+## Paper of Interest List
 
 |Paper|Source|Related Material|
 |:-:|:-:|:-:|
@@ -53,6 +51,8 @@ tags:
 |Re-ID done right: towards good practices for person re-identification|arXiv|-|
 |Weakly Supervised Person Re-Identification|CVPR2019|-|
 |Multimodal clothing recognition for semantic search in unconstrained surveillance imagery|VCIP|-|
+|Fusion-Attention Network for person search with free-form natural language|PRL|-|
+|Cascade Attention Network for Person Search: Both Image and Text-Image Similarity Selection|arXiv|-|
 
 ## Dataset
 
