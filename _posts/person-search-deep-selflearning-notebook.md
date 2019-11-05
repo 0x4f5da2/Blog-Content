@@ -48,7 +48,7 @@ tags:
 |End-To-End Person Search Sequentially Trained On Aggregated Dataset|Image Processing|-|
 |Scale Voting With Pyramidal Feature Fusion Network for Person Search|IEEE Access|-|
 |Person Search System Using Clothing Features|Electronics and Communications in Japan|-|
-|Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|-|
+|Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|https://github.com/gggcy/person_search|
 
 ## Paper of Interest List
 
