@@ -32,7 +32,7 @@ tags:
 |Transferring a Semantic Representation for Person Re-Identification and Search|CVPR2015|-|
 |Person Search in a Scene by Jointly Modeling People Commonness and Person Uniqueness|ACM MM 2014|-|
 |RCAA: Relational context-aware agents for person search|ECCV2018|-|
-|End-to-End Detection and Re-identification Integrated Net for Person Search|arXiv|-|
+|End-to-End Detection and Re-identification Integrated Net for Person Search|ACCV2018|-|
 |Learning Context Graph for Person Search|CVPR2019 Oral|https://github.com/sjtuzq/person_search_gcn|
 |Query-guided End-to-End Person Search|CVPR2019|https://github.com/munjalbharti/Query-guided-End-to-End-Person-Search|
 |Partially Separated Networks for Person Search|PCM2018|-|
@@ -41,6 +41,14 @@ tags:
 |Enhancing Person Retrieval with Joint Person Detection, Attribute Learning, and Identification|PCM2018|-|
 |Spatial Invariant Person Search Network|PRCV2018|https://github.com/liliangqi/person_search|
 |FMT: fusing multi-task convolutional neural network for person search|Multimedia Tools and Applications|-|
+|Segmentation Mask Guided End-to-End Person Search|arXiv|-|
+|Dhff: Robust Multi-Scale Person Search by Dynamic Hierarchical Feature Fusion|Image Processing 2019|-|
+|Comprehensive Samples Constrain for Person Search|VCIP 2018|-|
+|Fast Person Search Pipeline|ICME 2019|-|
+|End-To-End Person Search Sequentially Trained On Aggregated Dataset|Image Processing|-|
+|Scale Voting With Pyramidal Feature Fusion Network for Person Search|IEEE Access|-|
+|Person Search System Using Clothing Features|Electronics and Communications in Japan|-|
+|Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|-|
 
 ## Paper of Interest List
 
@@ -53,6 +61,10 @@ tags:
 |Multimodal clothing recognition for semantic search in unconstrained surveillance imagery|VCIP|-|
 |Fusion-Attention Network for person search with free-form natural language|PRL|-|
 |Cascade Attention Network for Person Search: Both Image and Text-Image Similarity Selection|arXiv|-|
+|Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search|ACM MM|-|
+|Language Person Search with Mutually Connected Classification Loss|ICASSP 2019|-|
+|Improving Text-Based Person Search by Spatial Matching and Adaptive Threshold|WACV 2018|-|
+
 
 ## Dataset
 
