@@ -71,11 +71,11 @@ tags:
 
 该领域主要只有两个数据集 **[PRW](http://www.liangzheng.com.cn/Project/project_prw.html)** 以及 **[CUHK-SYSU](http://www.sysu-hcp.net/resources/)**
 
-## Environment Configuration of 'Joint Detection and Identification Feature Learning for Person Search'
+## Docker Image for JDI-PS
 
 做了docker镜像：https://hub.docker.com/r/4f5da2/person_search
 
-### 需要注意的一些地方
+### Reminders for the Docker Image
 
 * 在`tools/demo.py`中的`import matplotlib`下添加`matplotlib.use('Agg')`来避免对GUI相关功能的调用（因为是在docker里）
 
