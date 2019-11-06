@@ -17,6 +17,8 @@ Anaconda相关
 
 * conda常用操作（参考`tldr conda`以及[conda cheat sheet](https://docs.conda.io/projects/conda/en/latest/_downloads/1f5ecf5a87b1c1a8aaf5a7ab8a7a0ff7/conda-cheatsheet.pdf)）
 
+* conda管理环境相关内容：https://conda.io/docs/user-guide/tasks/manage-environments.html
+
     ```sh
     # 显示conda相关信息
     conda info
@@ -114,3 +116,10 @@ Numpy高级操作
 https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html
 
 https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html
+
+Python3 past.builtins模块导入错误
+---
+```sh
+pip install future
+conda install future
+```
