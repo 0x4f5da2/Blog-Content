@@ -42,7 +42,7 @@ tags:
 |Spatial Invariant Person Search Network|PRCV2018|https://github.com/liliangqi/person_search|
 |FMT: fusing multi-task convolutional neural network for person search|Multimedia Tools and Applications|-|
 |Segmentation Mask Guided End-to-End Person Search|arXiv|-|
-|Dhff: Robust Multi-Scale Person Search by Dynamic Hierarchical Feature Fusion|Image Processing 2019|-|
+|Dhff: Robust Multi-Scale Person Search by Dynamic Hierarchical Feature Fusion|ICIP 2019|-|
 |Comprehensive Samples Constrain for Person Search|VCIP 2018|-|
 |Fast Person Search Pipeline|ICME 2019|-|
 |End-To-End Person Search Sequentially Trained On Aggregated Dataset|Image Processing|-|

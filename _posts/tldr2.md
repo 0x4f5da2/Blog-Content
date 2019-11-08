@@ -123,3 +123,17 @@ Python3 past.builtins模块导入错误
 pip install future
 conda install future
 ```
+
+IPython自动重新载入
+---
+
+执行
+```
+%load_ext autoreload
+%autoreload 2
+```
+或者
+```
+import autoreload
+?autoreload
+```
