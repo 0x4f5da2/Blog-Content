@@ -50,6 +50,7 @@ tags:
 |Person Search System Using Clothing Features|Electronics and Communications in Japan|-|
 |Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|https://github.com/gggcy/person_search|
 |Knowledge Distillation for End-to-End Person Search|arXiv|-|
+|Re-ID Driven Localization Refinement for Person Search|ICCV 2019|-|
 
 ## Paper of Interest List
 
