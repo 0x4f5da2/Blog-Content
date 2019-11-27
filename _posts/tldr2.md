@@ -110,12 +110,6 @@ import atexit
 atexit.register(cleanup)
 ```
 
-Numpy高级操作
----
-
-https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html
-
-https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html
 
 Python3 past.builtins模块导入错误
 ---
