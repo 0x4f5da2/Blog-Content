@@ -2,6 +2,7 @@
 title: TL;DR for DL
 date: 2019-11-26 18:06:14
 tags:
+mathjax: true
 ---
 
 给自己炼丹时候看的杂七杂八的东西 | My naive wiki for DL 😀
@@ -59,3 +60,26 @@ tensor([[0, 1, 1, 0, 1, 0],
         [0, 1, 0, 1, 1, 1],
         [1, 1, 0, 0, 0, 1]], dtype=torch.uint8)
 ```
+
+Faster R-CNN中SmoothL1Loss相关内容
+---
+
+torchvision里的SmoothL1Loss是py-faster-rcnn中的所使用的SmoothL1Loss的一个特例。Faster R-CNN中使用的Loss的公式如下。
+
+$$
+f(x)=\left\{
+\begin{aligned}
+0.5 \times (sigma^2 \times x)^2  && && if |x|< \frac{1}{sigma^2} \\
+|x| - 0.5 \times sigma^2 && && otherwise
+\end{aligned}
+\right.
+$$
+
+
+对于其中的其他参数，`bbox_inside_weights`用于控制只让正样本参与回归的计算，`bbox_outside_weights`起到公式中的$N_{reg}$的效果。
+
+### 相关参考
+
+* https://www.zhihu.com/question/65587875
+
+* https://github.com/rbgirshick/caffe-fast-rcnn/blob/faster-rcnn/src/caffe/layers/smooth_L1_loss_layer.cu
