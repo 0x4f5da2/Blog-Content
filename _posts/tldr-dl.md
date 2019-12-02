@@ -70,7 +70,7 @@ $$
 f(x)=\left\{
 \begin{aligned}
 0.5 \times (sigma^2 \times x)^2  && && if |x|< \frac{1}{sigma^2} \\
-|x| - 0.5 \times sigma^2 && && otherwise
+|x| - 0.5 / sigma^2 && && otherwise
 \end{aligned}
 \right.
 $$
