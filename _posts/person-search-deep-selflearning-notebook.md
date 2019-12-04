@@ -45,7 +45,7 @@ tags:
 |Dhff: Robust Multi-Scale Person Search by Dynamic Hierarchical Feature Fusion|ICIP 2019|-|
 |Comprehensive Samples Constrain for Person Search|VCIP 2018|-|
 |Fast Person Search Pipeline|ICME 2019|-|
-|End-To-End Person Search Sequentially Trained On Aggregated Dataset|Image Processing|-|
+|End-To-End Person Search Sequentially Trained On Aggregated Dataset|ICIP|-|
 |Scale Voting With Pyramidal Feature Fusion Network for Person Search|IEEE Access|-|
 |Person Search System Using Clothing Features|Electronics and Communications in Japan|-|
 |Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|https://github.com/gggcy/person_search|
