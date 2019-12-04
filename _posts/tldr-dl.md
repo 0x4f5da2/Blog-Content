@@ -69,7 +69,7 @@ torchvision里的SmoothL1Loss是py-faster-rcnn中的所使用的SmoothL1Loss的�
 $$
 f(x)=
 \begin{cases}
-0.5 \times\left(\operatorname{sigma}^{2} \times x\right)^{2} & if|x|<\frac{1}{\operatorname{sigma}^{2}} \\
+0.5 \times\left(\operatorname{sigma}^{2} \times x\right)^{2} & if|x|<\frac{1}{\operatorname{sigma}^{2}} \\\\
 |x|-0.5 / \operatorname{sigma}^{2} & {\text { otherwise }}
 \end{cases}
 $$
