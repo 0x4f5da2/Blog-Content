@@ -67,12 +67,12 @@ Faster R-CNN中SmoothL1Loss相关内容
 torchvision里的SmoothL1Loss是py-faster-rcnn中的所使用的SmoothL1Loss的一个特例。Faster R-CNN中使用的Loss的公式如下。
 
 $$
-f(x)=\left\{\begin{array}{cc}
-{0.5 \times\left(\operatorname{sigma}^{2} \times x\right)^{2}} & {i f|x|<\frac{1}{\operatorname{sigma}^{2}}} \\
-{|x|-0.5 / \operatorname{sigma}^{2}} & {\text { otherwise }}
-\end{array}\right.
+f(x)=
+\begin{cases}
+0.5 \times\left(\operatorname{sigma}^{2} \times x\right)^{2}& if|x|<\frac{1}{\operatorname{sigma}^{2}}\\
+|x|-0.5 / \operatorname{sigma}^{2} & {\text { otherwise }}
+\end{cases}
 $$
-
 
 对于其中的其他参数，`bbox_inside_weights`用于控制只让正样本参与回归的计算，`bbox_outside_weights`起到公式中的$N_{reg}$的效果。
 
