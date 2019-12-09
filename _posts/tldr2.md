@@ -135,7 +135,7 @@ import autoreload
 KMS Key
 ---
 
-来自互联网
+来自互联网，需要配合KMS服务器使用
 
 ```
 Office Professional Plus 2019：NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP
