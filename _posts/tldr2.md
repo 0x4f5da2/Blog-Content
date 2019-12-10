@@ -161,3 +161,9 @@ Windows 10 Enterprise: NPPR9-FWDCX-D2C8J-H872K-2YT43
 Windows 10 Education: NW6C2-QMPVW-D7KKK-3GKT6-VCFB2
 ```
 
+在Lubuntu中使用xrdp
+---
+
+* `sudo apt-get install xrdp`
+* 修改 `/etc/xrdp/startwm.sh`最后一行为 `. /etc/X11/Xsession`
+* 创建或者修改`~/.xsession`的内容为`lxsession -e LXDE -s Lubuntu`
