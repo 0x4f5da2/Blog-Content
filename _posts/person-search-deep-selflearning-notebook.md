@@ -51,6 +51,8 @@ tags:
 |Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|https://github.com/gggcy/person_search|
 |Knowledge Distillation for End-to-End Person Search|arXiv|-|
 |Re-ID Driven Localization Refinement for Person Search|ICCV 2019|-|
+|Person Search Based on Improved Joint Learning Network|CASE 2019|-|
+|Dynamic imposter based online instance matching for person search|PR|-|
 
 ## Paper of Interest List
 
