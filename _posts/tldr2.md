@@ -166,9 +166,9 @@ Windows 10 Education: NW6C2-QMPVW-D7KKK-3GKT6-VCFB2
 Windows
 
 ```sh
-slmgr -skms <host>
-slmgr -ipk <keys>
-slmgr -ato
+slmgr /skms <host>
+slmgr /ipk <keys>
+slmgr /ato
 ```
 
 Office
