@@ -135,8 +135,7 @@ import autoreload
 KMS Key
 ---
 
-来自互联网，需要配合KMS服务器使用
-
+来自互联网，需要配合[KMS服务器](https://github.com/Wind4/vlmcsd)使用
 ```
 Office Professional Plus 2019：NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP
 Office Standard 2019：6NWWJ-YQWMR-QKGCB-6TMB3-9D9HK
@@ -161,9 +160,53 @@ Windows 10 Enterprise: NPPR9-FWDCX-D2C8J-H872K-2YT43
 Windows 10 Education: NW6C2-QMPVW-D7KKK-3GKT6-VCFB2
 ```
 
+常用KMS指令
+---
+
+Windows
+
+```sh
+slmgr -skms <host>
+slmgr -ipk <keys>
+slmgr -ato
+```
+
+Office
+
+```sh
+# open Office directory
+cscript ospp.vbs /sethst:<host>
+cscript ospp.vbs /inpkey:<key>
+cscript ospp.vbs /act
+```
+
+相关参考：
+
+* https://docs.microsoft.com/en-us/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office
+
+* https://docs.microsoft.com/en-us/windows-server/get-started/activation-slmgr-vbs-options
+
 在Lubuntu中使用xrdp
 ---
 
 * `sudo apt-get install xrdp`
 * 修改 `/etc/xrdp/startwm.sh`最后一行为 `. /etc/X11/Xsession`
 * 创建或者修改`~/.xsession`的内容为`lxsession -e LXDE -s Lubuntu`
+
+设置终端使用科学上网
+---
+
+```sh
+export all_proxy=socks5://127.0.0.1:1086
+```
+
+使用终端将文件移入回收站
+---
+
+```sh
+brew install trash
+# or
+sudo apt install trash
+
+trash <file> <...>
+```
