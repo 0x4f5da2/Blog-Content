@@ -89,4 +89,12 @@ $$
 x^2 + y^2 + z^2 = 1
 $$
 
+#### 图片支持
+
+* 将`_config.yml`中的`post_asset_folder`设置为`true`
+
+* 在Hexo目录下安装`hexo-asset-image`: `npm install hexo-asset-image --save`
+
+* 测试：
+    ![](first-blog/test_img.png "test")
 

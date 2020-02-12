@@ -13,6 +13,7 @@ install:
 - cd Blog-Hexo
 - npm install
 - npm install hexo-deployer-git --save
+- npm install hexo-asset-image --save
 - sed -i "s/valine_appid/${VALINE_APPID}/g" ./themes/next/_config.yml
 - sed -i "s/valine_appkey/${VALINE_APPKEY}/g" ./themes/next/_config.yml
 - sed -i "s/tencent_analytics_id/${ANALYTICS_ID}/g" ./themes/next/_config.yml
