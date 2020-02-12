@@ -93,7 +93,7 @@ $$
 
 * 将`_config.yml`中的`post_asset_folder`设置为`true`
 
-* 在Hexo目录下安装`hexo-asset-image`: `npm install hexo-asset-image --save`
+* 创建与markdown文件名相同的目录，放入图片
 
 * 测试：
     ![test_img](test_img.png "test")
