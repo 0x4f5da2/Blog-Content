@@ -96,5 +96,5 @@ $$
 * 在Hexo目录下安装`hexo-asset-image`: `npm install hexo-asset-image --save`
 
 * 测试：
-    ![](first-blog/test_img.png "test")
+    ![test_img](first-blog/test_img.png "test")
 
