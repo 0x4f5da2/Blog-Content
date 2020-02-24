@@ -216,10 +216,14 @@ trash <file> <...>
 
 [做研究与写论文-周志华](./how_to_do_research.pdf)
 
+\* 来源于互联网，相关权利归属原作者
+
 科技写作中的时态
 ---
 
 [Tense considerations for science writing](./tenses_in_sci_writing.pdf)
+
+\* 来源于互联网，相关权利归属原作者
 
 解决Linux&Windows双系统时间不同步
 ---
