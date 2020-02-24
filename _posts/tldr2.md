@@ -210,3 +210,13 @@ sudo apt install trash
 
 trash <file> <...>
 ```
+
+做研究与写论文
+---
+
+[做研究与写论文-周志华](./how_to_do_research.pdf)
+
+科技写作中的时态
+---
+
+[Tense considerations for science writing](./tenses_in_sci_writing.pdf)
