@@ -220,3 +220,18 @@ trash <file> <...>
 ---
 
 [Tense considerations for science writing](./tenses_in_sci_writing.pdf)
+
+解决Linux&Windows双系统时间不同步
+---
+
+在Linux下：
+
+```sh
+sudo timedatectl set-local-rtc 1
+```
+
+或者，在Windows下：
+
+```sh
+reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
+```
