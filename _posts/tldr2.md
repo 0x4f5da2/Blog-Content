@@ -239,3 +239,18 @@ sudo timedatectl set-local-rtc 1
 ```sh
 reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
 ```
+
+htop中的不同颜色
+---
+
+CPU：
+* 蓝色：低优先级线程
+* 绿色：正常优先级线程
+* 红色：内核线程
+* 青绿色：虚拟化线程
+
+RAM：
+* 绿色：已经使用的内存
+* 蓝色：缓冲（buffer）
+* 黄色/橙色：缓存（cache）
+
