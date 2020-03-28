@@ -53,6 +53,8 @@ tags:
 |Re-ID Driven Localization Refinement for Person Search|ICCV 2019|-|
 |Person Search Based on Improved Joint Learning Network|CASE 2019|-|
 |Dynamic imposter based online instance matching for person search|PR|-|
+|Person Search with Joint Detection, Segmentation and Re-identification|HCC 2019|-|
+|Improving Person Search by Adaptive Feature Pyramid-based Multi-Scale Matching|VCIP 2019|-|
 
 ## Paper of Interest List
 
