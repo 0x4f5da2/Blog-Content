@@ -81,3 +81,8 @@ $$
 * https://www.zhihu.com/question/65587875
 
 * https://github.com/rbgirshick/caffe-fast-rcnn/blob/faster-rcnn/src/caffe/layers/smooth_L1_loss_layer.cu
+
+卷积以及转置（反）卷积相关内容
+---
+
+https://arxiv.org/abs/1603.07285 中的第四章节 [pdf](1603.07285.pdf)
