@@ -6,6 +6,8 @@ branches:
   - master
 before_install:
 - git clone https://${ACCESS_TOKEN}@github.com/0x4f5da2/Blog-Hexo.git
+- git clone https://${ACCESS_TOKEN}@github.com/0x4f5da2/Blog-Content-Hidden.git
+- cp Blog-Content-Hidden/*.md _posts/
 - mkdir Blog-Hexo/source
 - cp -r _posts Blog-Hexo/source
 install:
