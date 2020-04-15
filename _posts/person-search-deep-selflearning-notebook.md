@@ -18,28 +18,26 @@ tags:
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |A Discriminatively Learned Feature Embedding Based on Multi-Loss Fusion For Person Search|ICASSP 2018|-||||
 |Correlation Based Identity Filter: An Efficient Framework for Person Search|ICIG2017|-||||
-|Joint Detection and Identification Feature Learning for Person Search|CVPR2017|https://github.com/ShuangLI59/person_search|✩✩✩|||
+|Joint Detection and Identification Feature Learning for Person Search|CVPR2017|[Source Code](https://github.com/ShuangLI59/person_search)|✩✩✩|||
 |Enhanced Deep Feature Representation for Person Search|CCCV2017|-||||
 |Fusion-Attention Network for person search with free-form natural language|Pattern Recognition Letters 2018|-||||
 |IAN: The Individual Aggregation Network for Person Search|Pattern Recognition 2019|-||||
 |Instance Enhancing Loss: Deep Identity-Sensitive Feature Embedding For Person Search|ICIP2018|-||||
 |Neural Person Search Machines|ICCV2017|-||||
-|Person Re-identification in the Wild|CVPR2017|https://github.com/liangzheng06/PRW-baseline||||
+|Person Re-identification in the Wild|CVPR2017|[Baseline](https://github.com/liangzheng06/PRW-baseline)||||
 |Person Search by Multi-Scale Matching|ECCV2018|-||||
-|Person Search in Videos with One Portrait Through Visual and Temporal Links|ECCV2018|http://qqhuang.cn/projects/eccv18-person-search/ https://github.com/hqqasw/person-search-PPCC||||
 |Person Search via A Mask-Guided Two-Stream CNN Model|ECCV 2018|-||||
-|Person Search with Natural Language Description|CVPR2017|https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description||||
 |Transferring a Semantic Representation for Person Re-Identification and Search|CVPR2015|-||||
 |Person Search in a Scene by Jointly Modeling People Commonness and Person Uniqueness|ACM MM 2014|-||||
 |RCAA: Relational context-aware agents for person search|ECCV2018|-||||
 |End-to-End Detection and Re-identification Integrated Net for Person Search|ACCV2018|-||||
-|Learning Context Graph for Person Search|CVPR2019 Oral|https://github.com/sjtuzq/person_search_gcn||||
-|Query-guided End-to-End Person Search|CVPR2019|https://github.com/munjalbharti/Query-guided-End-to-End-Person-Search||||
+|Learning Context Graph for Person Search|CVPR2019 Oral|[Source Code](https://github.com/sjtuzq/person_search_gcn)||||
+|Query-guided End-to-End Person Search|CVPR2019|[Home Page](https://github.com/munjalbharti/Query-guided-End-to-End-Person-Search)||||
 |Partially Separated Networks for Person Search|PCM2018|-||||
 |A cascaded multitask network with deformable spatial transform on person search|International Journal of Advanced Robotic Systems|-||||
 |Multilevel Collaborative Attention Network for Person Search|ACCV2018|-||||
 |Enhancing Person Retrieval with Joint Person Detection, Attribute Learning, and Identification|PCM2018|-||||
-|Spatial Invariant Person Search Network|PRCV2018|https://github.com/liliangqi/person_search||||
+|Spatial Invariant Person Search Network|PRCV2018|[Source Code](https://github.com/liliangqi/person_search)||||
 |FMT: fusing multi-task convolutional neural network for person search|Multimedia Tools and Applications|-||||
 |Segmentation Mask Guided End-to-End Person Search|arXiv|-||||
 |Dhff: Robust Multi-Scale Person Search by Dynamic Hierarchical Feature Fusion|ICIP 2019|-||||
@@ -48,7 +46,7 @@ tags:
 |End-To-End Person Search Sequentially Trained On Aggregated Dataset|ICIP|-||||
 |Scale Voting With Pyramidal Feature Fusion Network for Person Search|IEEE Access|-||||
 |Person Search System Using Clothing Features|Electronics and Communications in Japan|-||||
-|Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|https://github.com/gggcy/person_search||||
+|Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|[Source Code](https://github.com/gggcy/person_search)||||
 |Knowledge Distillation for End-to-End Person Search|arXiv|-||||
 |Re-ID Driven Localization Refinement for Person Search|ICCV 2019|-||||
 |Person Search Based on Improved Joint Learning Network|CASE 2019|-||||
@@ -56,7 +54,7 @@ tags:
 |Person Search with Joint Detection, Segmentation and Re-identification|HCC 2019|-||||
 |Improving Person Search by Adaptive Feature Pyramid-based Multi-Scale Matching|VCIP 2019|-||||
 |Person Search Based on Attention Mechanism|ISCIT 2019|-||||
-|Hierarchical Online Instance Matching for Person Search|AAAI 2020|-|✩✩✩|||
+|Hierarchical Online Instance Matching for Person Search|AAAI 2020|[Source Code](https://github.com/DeanChan/HOIM-PyTorch)|✩✩✩|89.7/90.8|39.8/80.4|
 |Person Search by Separated Modeling and A Mask-Guided Two-Stream CNN Model|TIP 2020|-||||
 |GAN-based person search via deep complementary classifier with center-constrained Triplet loss|PR 2020|-||||
 |Person Search via Deep Integrated Networks|Applied Science|-||||
@@ -80,6 +78,8 @@ tags:
 |Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search|ACM MM|-|
 |Language Person Search with Mutually Connected Classification Loss|ICASSP 2019|-|
 |Improving Text-Based Person Search by Spatial Matching and Adaptive Threshold|WACV 2018|-|
+|Person Search in Videos with One Portrait Through Visual and Temporal Links|ECCV2018|[Project Page](http://qqhuang.cn/projects/eccv18-person-search/) [Source Code](https://github.com/hqqasw/person-search-PPCC)|
+|Person Search with Natural Language Description|CVPR2017|[Source Code](https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description)|
 
 
 ## Dataset
