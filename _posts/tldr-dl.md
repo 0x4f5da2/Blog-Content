@@ -86,3 +86,13 @@ $$
 ---
 
 https://arxiv.org/abs/1603.07285 中的第四章节讲得比较好 [\[pdf\]](1603.07285.pdf)
+
+取标题的一种方法
+---
+
+【研究目的】+【研究背景】：【研究方法】
+如：Towards Cost-Efficient Content Placement in Media Cloud: Modeling and Analysis
+
+研究目的：Towards Cost-Efficient Content Placement
+研究背景：Media Cloud
+研究方法：Modeling and Analysis
