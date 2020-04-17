@@ -257,3 +257,8 @@ RAM：
 Latex入门
 ---
 一份不太简短的 LATEX2ε 介绍：http://www.ptep-online.com/ctan/lshort_chinese.pdf [\[pdf\]](lshort_chinese.pdf)
+
+在macOS终端中添加code命令
+---
+
+在VSCode中按下`Command`+`Shift`+`P`，搜索并选中`Shell Command : Install code in PATH`。
