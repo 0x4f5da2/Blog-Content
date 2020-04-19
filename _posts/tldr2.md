@@ -262,3 +262,18 @@ Latex入门
 ---
 
 在VSCode中按下`Command`+`Shift`+`P`，搜索并选中`Shell Command : Install code in PATH`。
+
+macOS下文字输入的相关快捷键
+---
+
+* Command + 左箭头：前往一行的开头，相当于Home
+* Command + 右箭头：前往一行的结尾，相当于End
+* Command + 上箭头：前往正在编辑的内容的第一行
+* Command + 下箭头：前往正在编辑的内容的最后一样
+* Command + Delete：删除一行
+* Option + 左箭头：向前移动一个单词
+* Option + 右箭头：向后移动一个单词
+* Option + Delete：向前删除一个单词
+* Option + Fn + Delete：向后删除一个单词
+
+更多快捷键：https://support.apple.com/zh-cn/HT201236
