@@ -63,6 +63,7 @@ tags:
 |Efficient Person Search via Expert-Guided Knowledge Distillation|TCYB 2019|-||||
 |An Iterative unsupervised Person Search Algorithm on Natural Scene Images|CAC 2019|-||||
 |GAN-based person search via deep complementary classifier with center-constrained Triplet loss|PR 2020|-||||
+|Robust Partial Matching for Person Search in the Wild|CVPR 2020|-|✩✩✩|88.9/89.3|41.9/81.4|
 
 ## Paper of Interest List
 
