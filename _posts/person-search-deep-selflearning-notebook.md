@@ -61,8 +61,8 @@ tags:
 |Improved Model Structure with Cosine Margin OIM Loss for End-to-End Person Search|MMM 2020|-||||
 |Norm-Aware Embedding for Efficient Person Search|CVPR 2020|-||||
 |Efficient Person Search via Expert-Guided Knowledge Distillation|TCYB 2019|-||||
-|An Iterative unsupervised Person Search Algorithm on Natural Scene Images|CAC 2019|-||||
-|GAN-based person search via deep complementary classifier with center-constrained Triplet loss|PR 2020|-||||
+|An Iterative ***unsupervised*** Person Search Algorithm on Natural Scene Images|CAC 2019|-|✩✩|41.14/40.93|21.74/35.97|
+|GAN-based person search via deep complementary classifier with center-constrained Triplet loss|PR 2020|-|✩|77.89/78.34|53.09/70.39|
 |Robust Partial Matching for Person Search in the Wild|CVPR 2020|-|✩✩✩|88.9/89.3|41.9/81.4|
 
 ## Paper of Interest List
