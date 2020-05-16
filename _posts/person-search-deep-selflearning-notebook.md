@@ -45,13 +45,12 @@ tags:
 |Fast Person Search Pipeline|ICME 2019|-||||
 |End-To-End Person Search Sequentially Trained On Aggregated Dataset|ICIP|-||||
 |Scale Voting With Pyramidal Feature Fusion Network for Person Search|IEEE Access|-||||
-|Person Search System Using Clothing Features|Electronics and Communications in Japan|-||||
 |Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|[Source Code](https://github.com/gggcy/person_search)||||
 |Knowledge Distillation for End-to-End Person Search|arXiv|-||||
-|Re-ID Driven Localization Refinement for Person Search|ICCV 2019|-||||
-|Person Search Based on Improved Joint Learning Network|CASE 2019|-||||
-|Dynamic imposter based online instance matching for person search|PR|-||||
-|Person Search with Joint Detection, Segmentation and Re-identification|HCC 2019|-||||
+|Re-ID Driven Localization Refinement for Person Search|ICCV 2019|-|✩✩✩|93.0/94.2|42.9/70.2|
+|Person Search Based on Improved Joint Learning Network|CASE 2019|-|✩|84.1/84.6|37.6/71.1|
+|Dynamic imposter based online instance matching for person search|PR 2019|-|✩✩|83.8/84.6|30.4/71.5|
+|Person Search with Joint Detection, Segmentation and Re-identification|HCC 2019|-|✩✩|-|24.35/53.73|
 |Improving Person Search by Adaptive Feature Pyramid-based Multi-Scale Matching|VCIP 2019|-|✩✩|81.2/81.5|-|
 |Person Search Based on Attention Mechanism|ISCIT 2019|-|✩|78.9/81.9|-|
 |Hierarchical Online Instance Matching for Person Search|AAAI 2020|[Source Code](https://github.com/DeanChan/HOIM-PyTorch)|✩✩✩|89.7/90.8|39.8/80.4|
