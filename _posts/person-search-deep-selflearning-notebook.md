@@ -42,9 +42,9 @@ tags:
 |Segmentation Mask Guided End-to-End Person Search|arXiv|-||||
 |Dhff: Robust Multi-Scale Person Search by Dynamic Hierarchical Feature Fusion|ICIP 2019|-||||
 |Comprehensive Samples Constrain for Person Search|VCIP 2018|-||||
-|Fast Person Search Pipeline|ICME 2019|-||||
-|End-To-End Person Search Sequentially Trained On Aggregated Dataset|ICIP|-||||
-|Scale Voting With Pyramidal Feature Fusion Network for Person Search|IEEE Access|-||||
+|Fast Person Search Pipeline|ICME 2019|-|✩✩|86.99/89.87|44.45/70.58|
+|End-To-End Person Search Sequentially Trained On Aggregated Dataset|ICIP 2019|-|✩✩|79.4/80.5|29.4/31.9|
+|Scale Voting With Pyramidal Feature Fusion Network for Person Search|IEEE Access 2019|-|✩✩|84.5/89.8|34.3/73.9|
 |Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|[Source Code](https://github.com/gggcy/person_search)||||
 |Knowledge Distillation for End-to-End Person Search|arXiv|-||||
 |Re-ID Driven Localization Refinement for Person Search|ICCV 2019|-|✩✩✩|93.0/94.2|42.9/70.2|
