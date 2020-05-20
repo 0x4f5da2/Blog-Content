@@ -12,7 +12,7 @@ tags:
 
 https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J
 
-## Shell
+## Shell及相关命令
 
 * 如果需要进入一个目录，需要有对应的`x`权限；如果需要读取目录下的文件，需要有对应的`r`权限
 * 使用`>>`在一个文件最后附加内容
@@ -90,3 +90,61 @@ https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J
 
 * Pro Git：https://git-scm.com/book/en/v2
 * 在Git中，“当前所在的位置”称为“ HEAD”
+
+## Profiling and Debugging
+
+* 使用ipdb对Python程序进行调试：
+    ```
+    l(ist) - Displays 11 lines around the current line or continue the previous listing.
+    s(tep) - Execute the current line, stop at the first possible occasion.
+    n(ext) - Continue execution until the next line in the current function is reached or it returns.
+    b(reak) - Set a breakpoint (depending on the argument provided).
+    p(rint) - Evaluate the expression in the current context and print its value. There’s also pp to display using pprint instead.
+    r(eturn) - Continue execution until the current function returns.
+    q(uit) - Quit the debugger.
+    ```
+* 使用`pyflakes`、`mypy`等程序代码进行静态检查
+* 使用`time`命令对一个命令的运行时间进行分析
+* 使用`cProfile`对Python程序的调用耗时进行分析，例如`python -m cProfile -s tottime grep.py`；使用`line_profiler`对每一行的耗时进行分析，例如`kernprof -l -v test.py`
+* 使用`memory-profiler`对内存占用进行分析，例如`python -m memory_profiler example.py`
+* 使用`pycallgraph`分析程序的调用情况
+* 使用`ncdu`分析磁盘占用
+* 使用`hyperfine`进行基准测试
+
+
+# Misc
+
+* 设置守护进程
+    ```
+    # /etc/systemd/system/myapp.service
+    [Unit]
+    Description=My Custom App
+    After=network.target
+
+    [Service]
+    User=foo
+    Group=foo
+    WorkingDirectory=/home/foo/projects/mydaemon
+    ExecStart=/usr/bin/local/python3.7 app.py
+    Restart=on-failure
+
+    [Install]
+    WantedBy=multi-user.target
+    ```
+* Linux中各个目录的用途，详细参看[FHS](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+    ```
+        /bin - Essential command binaries
+        /sbin - Essential system binaries, usually to be run by root
+        /dev - Device files, special files that often are interfaces to hardware devices
+        /etc - Host-specific system-wide configuration files
+        /home - Home directories for users in the system
+        /lib - Common libraries for system programs
+        /opt - Optional application software
+        /sys - Contains information and configuration for the system
+        /tmp - Temporary files (also /var/tmp). Usually deleted between reboots.
+        /usr/ - Read only user data
+            /usr/bin - Non-essential command binaries
+            /usr/sbin - Non-essential system binaries, usually to be run by root
+            /usr/local/bin - Binaries for user compiled programs
+        /var - Variable files like logs or caches
+    ```
