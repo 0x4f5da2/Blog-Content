@@ -8,9 +8,11 @@ tags:
 
 <!-- more -->
 
-## 链接
+## 课程链接
 
 https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J
+
+https://missing.csail.mit.edu
 
 ## Shell及相关命令
 
@@ -112,7 +114,7 @@ https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J
 * 使用`hyperfine`进行基准测试
 
 
-# Misc
+## Misc
 
 * 设置守护进程
     ```

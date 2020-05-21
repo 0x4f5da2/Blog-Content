@@ -36,12 +36,12 @@ tags:
 |Partially Separated Networks for Person Search|PCM2018|-||||
 |A cascaded multitask network with deformable spatial transform on person search|International Journal of Advanced Robotic Systems|-||||
 |Multilevel Collaborative Attention Network for Person Search|ACCV2018|-||||
-|Enhancing Person Retrieval with Joint Person Detection, Attribute Learning, and Identification|PCM2018|-||||
-|Spatial Invariant Person Search Network|PRCV2018|[Source Code](https://github.com/liliangqi/person_search)||||
-|FMT: fusing multi-task convolutional neural network for person search|Multimedia Tools and Applications|-||||
-|Segmentation Mask Guided End-to-End Person Search|arXiv|-||||
-|Dhff: Robust Multi-Scale Person Search by Dynamic Hierarchical Feature Fusion|ICIP 2019|-||||
-|Comprehensive Samples Constrain for Person Search|VCIP 2018|-||||
+|Enhancing Person Retrieval with Joint Person Detection, Attribute Learning, and Identification|PCM 2018|-|✩|-|24.8/65.5|
+|Spatial Invariant Person Search Network|PRCV 2018|[Source Code](https://github.com/liliangqi/person_search)|✩✩|85.3/86.0|39.5/59.2|
+|FMT: fusing multi-task convolutional neural network for person search|MTAP 2019|-|✩|77.15/79.83|-|
+|Segmentation Mask Guided End-to-End Person Search|Image Communication 2020|[Dataset](https://github.com/Dingyuan-Zheng/maskPS)|✩✩|86.3/86.5|26.7/64.0|
+|DHFF: Robust Multi-Scale Person Search by Dynamic Hierarchical Feature Fusion|ICIP 2019|-|✩✩|90.2/91.7|41.1/70.1|
+|Comprehensive Samples Constrain for Person Search|VCIP 2018|-|✩|81.5/81.8|-|
 |Fast Person Search Pipeline|ICME 2019|-|✩✩|86.99/89.87|44.45/70.58|
 |End-To-End Person Search Sequentially Trained On Aggregated Dataset|ICIP 2019|-|✩✩|79.4/80.5|29.4/31.9|
 |Scale Voting With Pyramidal Feature Fusion Network for Person Search|IEEE Access 2019|-|✩✩|84.5/89.8|34.3/73.9|
@@ -88,6 +88,8 @@ tags:
 ## Dataset
 
 该领域主要只有两个数据集 **[PRW](http://www.liangzheng.com.cn/Project/project_prw.html)** 以及 **[CUHK-SYSU](http://www.sysu-hcp.net/resources/)**
+
+基于这两个数据集，有工作对于部分行人图像进行了mask标注：https://github.com/Dingyuan-Zheng/maskPS
 
 ## Docker Image for JDI-PS
 
