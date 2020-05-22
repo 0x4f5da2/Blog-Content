@@ -25,13 +25,12 @@ tags:
 |Instance Enhancing Loss: Deep Identity-Sensitive Feature Embedding For Person Search|ICIP2018|-||||
 |Neural Person Search Machines|ICCV2017|-||||
 |Person Re-identification in the Wild|CVPR2017|[Baseline](https://github.com/liangzheng06/PRW-baseline)||||
-|Person Search by Multi-Scale Matching|ECCV2018|-||||
-|Person Search via A Mask-Guided Two-Stream CNN Model|ECCV 2018|-||||
-|Transferring a Semantic Representation for Person Re-Identification and Search|CVPR2015|-||||
-|Person Search in a Scene by Jointly Modeling People Commonness and Person Uniqueness|ACM MM 2014|-||||
-|RCAA: Relational context-aware agents for person search|ECCV2018|-||||
-|End-to-End Detection and Re-identification Integrated Net for Person Search|ACCV2018|-||||
-|Learning Context Graph for Person Search|CVPR2019 Oral|[Code](https://github.com/sjtuzq/person_search_gcn)||||
+|Person Search by Multi-Scale Matching|ECCV 2018|-||||
+|Person Search via A Mask-Guided Two-Stream CNN Model|ECCV 2018|-|✩✩|83.0/83.7|32.6/72.1|
+|Person Search in a Scene by Jointly Modeling People Commonness and Person Uniqueness|ACM MM 2014|-|✩✩|-|-|
+|RCAA: Relational context-aware agents for person search|ECCV 2018|-|✩✩|79.3/81.3||
+|End-to-End Detection and Re-identification Integrated Net for Person Search|ACCV 2018|-|✩|79.5/81.5|25.6/48.7|
+|Learning Context Graph for Person Search|CVPR 2019|[Code](https://github.com/sjtuzq/person_search_gcn)|✩✩✩|84.1/86.5|33.4/73.6|
 |Query-guided End-to-End Person Search|CVPR 2019|[Home](https://github.com/munjalbharti/Query-guided-End-to-End-Person-Search)|✩✩✩|88.9/89.1|39.1/80.0|
 |Partially Separated Networks for Person Search|PCM 2018|-|✩✩|86.8/89.1|30.0/53.3|
 |A cascaded multitask network with deformable spatial transform on person search|IJARSys 2019|-|✩✩|84.1/84.5|34.3/68.4|

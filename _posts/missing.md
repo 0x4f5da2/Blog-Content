@@ -1,18 +1,18 @@
 ---
-title: The Missing Semester of Your CS Education 笔记
+title: The Missing Semester 笔记
 date: 2020-05-19 03:47:00
 tags:
 ---
 
-发现了一个不错的讲CS专业日常所需工具（？）的课程，对自己不熟的部分简单记录了一下
+发现了一个不错的讲CS专业基本素养的课程，简单的过了一下，对自己不熟的部分简单进行了简单的记录😀
 
 <!-- more -->
 
 ## 课程链接
 
-https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J
+主页：https://missing.csail.mit.edu
 
-https://missing.csail.mit.edu
+视频：https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J
 
 ## Shell及相关命令
 
