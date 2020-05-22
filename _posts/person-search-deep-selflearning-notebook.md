@@ -32,10 +32,10 @@ tags:
 |RCAA: Relational context-aware agents for person search|ECCV2018|-||||
 |End-to-End Detection and Re-identification Integrated Net for Person Search|ACCV2018|-||||
 |Learning Context Graph for Person Search|CVPR2019 Oral|[Code](https://github.com/sjtuzq/person_search_gcn)||||
-|Query-guided End-to-End Person Search|CVPR2019|[Home](https://github.com/munjalbharti/Query-guided-End-to-End-Person-Search)||||
-|Partially Separated Networks for Person Search|PCM2018|-||||
-|A cascaded multitask network with deformable spatial transform on person search|International Journal of Advanced Robotic Systems|-||||
-|Multilevel Collaborative Attention Network for Person Search|ACCV2018|-||||
+|Query-guided End-to-End Person Search|CVPR 2019|[Home](https://github.com/munjalbharti/Query-guided-End-to-End-Person-Search)|✩✩✩|88.9/89.1|39.1/80.0|
+|Partially Separated Networks for Person Search|PCM 2018|-|✩✩|86.8/89.1|30.0/53.3|
+|A cascaded multitask network with deformable spatial transform on person search|IJARSys 2019|-|✩✩|84.1/84.5|34.3/68.4|
+|Multilevel Collaborative Attention Network for Person Search|ACCV 2018|-|✩✩|76.3/79.2|29.1/60.1|
 |Enhancing Person Retrieval with Joint Person Detection, Attribute Learning, and Identification|PCM 2018|-|✩|-|24.8/65.5|
 |Spatial Invariant Person Search Network|PRCV 2018|[Code](https://github.com/liliangqi/person_search)|✩✩|85.3/86.0|39.5/59.2|
 |FMT: fusing multi-task convolutional neural network for person search|MTAP 2019|-|✩|77.15/79.83|-|
