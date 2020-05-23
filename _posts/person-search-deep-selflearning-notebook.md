@@ -1,5 +1,5 @@
 ---
-title: 深度自学笔记(Person Search)
+title: Person Search深度自学笔记
 date: 2018-12-07 13:55:18
 tags:
 ---
@@ -16,16 +16,15 @@ tags:
 
 |Paper|Source|Related Material|Rating|CUHK(mAP/Top-1)|PRW(mAP/Top-1)|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|A Discriminatively Learned Feature Embedding Based on Multi-Loss Fusion For Person Search|ICASSP 2018|-||||
-|Correlation Based Identity Filter: An Efficient Framework for Person Search|ICIG2017|-||||
-|Joint Detection and Identification Feature Learning for Person Search|CVPR2017|[Code](https://github.com/ShuangLI59/person_search)|✩✩✩|||
-|Enhanced Deep Feature Representation for Person Search|CCCV2017|-||||
-|Fusion-Attention Network for person search with free-form natural language|Pattern Recognition Letters 2018|-||||
-|IAN: The Individual Aggregation Network for Person Search|Pattern Recognition 2019|-||||
-|Instance Enhancing Loss: Deep Identity-Sensitive Feature Embedding For Person Search|ICIP2018|-||||
-|Neural Person Search Machines|ICCV2017|-||||
-|Person Re-identification in the Wild|CVPR2017|[Baseline](https://github.com/liangzheng06/PRW-baseline)||||
-|Person Search by Multi-Scale Matching|ECCV 2018|-||||
+|A Discriminatively Learned Feature Embedding Based on Multi-Loss Fusion For Person Search|ICASSP 2018|-|✩|79.78/79.90|21.00/63.10|
+|Correlation Based Identity Filter: An Efficient Framework for Person Search|ICIG 2017|-|✩✩|43.35/50.48|-|
+|Joint Detection and Identification Feature Learning for Person Search|CVPR2 017|[Code](https://github.com/ShuangLI59/person_search)|✩✩✩|75.5/77.9|-|
+|Enhanced Deep Feature Representation for Person Search|CCCV 2017|-|✩|77.8/80.6|-|
+|IAN: The Individual Aggregation Network for Person Search|PR 2019|-|✩|77.23/80.45|-|
+|Instance Enhancing Loss: Deep Identity-Sensitive Feature Embedding For Person Search|ICIP 2018|-|✩✩|79.43/79.66|24.26/69.47|
+|Neural Person Search Machines|ICCV 2017|-|✩✩|77.9/81.2|24.2/53.1|
+|Person Re-identification in the Wild|CVPR 2017|[Baseline](https://github.com/liangzheng06/PRW-baseline)|✩✩|-|20.5/48.3|
+|Person Search by Multi-Scale Matching|ECCV 2018|-|✩✩|87.2/88.5|38.7/65.0|
 |Person Search via A Mask-Guided Two-Stream CNN Model|ECCV 2018|-|✩✩|83.0/83.7|32.6/72.1|
 |Person Search in a Scene by Jointly Modeling People Commonness and Person Uniqueness|ACM MM 2014|-|✩✩|-|-|
 |RCAA: Relational context-aware agents for person search|ECCV 2018|-|✩✩|79.3/81.3||
@@ -66,15 +65,11 @@ tags:
 ✩✩ = Inspiring
 ✩✩✩ = Insightful
 
-## Paper of Interest List
+## Related Paper List
 
 |Paper|Source|Related Material|
 |:-:|:-:|:-:|
-|Attribute-based Person Retrieval and Search in Video Sequences|AVSS2018|-|
-|Fast Open-World Person Re-Identification|Image Processing|-|
-|Re-ID done right: towards good practices for person re-identification|arXiv|-|
-|Weakly Supervised Person Re-Identification|CVPR2019|-|
-|Multimodal clothing recognition for semantic search in unconstrained surveillance imagery|VCIP|-|
+|Fusion-Attention Network for person search with free-form natural language|PRL 2018|-|
 |Fusion-Attention Network for person search with free-form natural language|PRL|-|
 |Cascade Attention Network for Person Search: Both Image and Text-Image Similarity Selection|arXiv|-|
 |Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search|ACM MM|-|
@@ -88,22 +83,14 @@ tags:
 
 该领域主要只有两个数据集 **[PRW](http://www.liangzheng.com.cn/Project/project_prw.html)** 以及 **[CUHK-SYSU](http://www.sysu-hcp.net/resources/)**
 
-基于这两个数据集，有工作对于部分行人图像进行了mask标注：https://github.com/Dingyuan-Zheng/maskPS
+基于这两个数据集，有工作对部分行人图像进行了[mask标注](https://github.com/Dingyuan-Zheng/maskPS)
 
 ## Docker Image for JDI-PS
 
-做了docker镜像：https://hub.docker.com/r/4f5da2/person_search
-
-### Reminders for the Docker Image
-
-* 在`tools/demo.py`中的`import matplotlib`下添加`matplotlib.use('Agg')`来避免对GUI相关功能的调用（因为是在docker里）
-
-* 由于protobuf版本发生变化，需在`lib/fast_rcnn/train.py`中增加一行`import google.protobuf.text_format`
-
-* 按照Github上对应的readme进行编译，填入docker镜像中cuDNN的路径如下：`cmake .. -DUSE_MPI=ON -DCUDNN_INCLUDE=/usr/include -DCUDNN_LIBRARY=/usr/lib/x86_64-linux-gnu/libcudnn.so`
-
-## Additional Related Material
-
-* https://github.com/Cysu/open-reid
-
+* 首先拉取Docker镜像：https://hub.docker.com/r/4f5da2/person_search
+* 在准备数据集和代码， 并对代码进行一下修改
+    * 在`tools/demo.py`中的`import matplotlib`下添加`matplotlib.use('Agg')`来避免对GUI相关功能的调用（因为是在docker里）
+    * 由于protobuf版本发生变化，需在`lib/fast_rcnn/train.py`中增加一行`import google.protobuf.text_format`
+    * 按照Github上对应的readme进行编译，填入docker镜像中cuDNN的路径如下：`cmake .. -DUSE_MPI=ON -DCUDNN_INCLUDE=/usr/include -DCUDNN_LIBRARY=/usr/lib/x86_64-linux-gnu/libcudnn.so`
+* 编译Caffe框架并进行训练
 
