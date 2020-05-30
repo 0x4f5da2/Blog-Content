@@ -2,6 +2,7 @@
 title: Person Search深度自学笔记
 date: 2018-12-07 13:55:18
 tags:
+mathjax: true
 ---
 
 一些乱七八糟给自己看的东西，并不觉得有人会看😅
@@ -43,8 +44,8 @@ tags:
 |Fast Person Search Pipeline|ICME 2019|-|✩✩|86.99/89.87|44.45/70.58|
 |End-To-End Person Search Sequentially Trained On Aggregated Dataset|ICIP 2019|-|✩✩|79.4/80.5|29.4/31.9|
 |Scale Voting With Pyramidal Feature Fusion Network for Person Search|IEEE Access 2019|-|✩✩|84.5/89.8|34.3/73.9|
-|Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|[Code](https://github.com/gggcy/person_search)||||
-|Knowledge Distillation for End-to-End Person Search|arXiv|-||||
+|Structure-aware person search with self-attention and online instance aggregation matching|Neurocomputing|[Code](https://github.com/gggcy/person_search)|✩|76.98/77.86|-|
+|Knowledge Distillation for End-to-End Person Search|arXiv|-|✩✩|85.0/85.5|-|
 |Re-ID Driven Localization Refinement for Person Search|ICCV 2019|-|✩✩✩|93.0/94.2|42.9/70.2|
 |Person Search Based on Improved Joint Learning Network|CASE 2019|-|✩|84.1/84.6|37.6/71.1|
 |Dynamic imposter based online instance matching for person search|PR 2019|-|✩✩|83.8/84.6|30.4/71.5|
@@ -60,10 +61,15 @@ tags:
 |An Iterative ***unsupervised*** Person Search Algorithm on Natural Scene Images|CAC 2019|-|✩✩|41.14/40.93|21.74/35.97|
 |GAN-based person search via deep complementary classifier with center-constrained Triplet loss|PR 2020|-|✩|77.89/78.34|53.09/70.39|
 |Robust Partial Matching for Person Search in the Wild|CVPR 2020|-|✩✩✩|88.9/89.3|41.9/81.4|
+|End-to-End Thorough Body Perception for Person Search|AAAI 2020|-||||
 
-✩ = Lack of Innovation
-✩✩ = Inspiring
-✩✩✩ = Insightful
+Description of the rating$^{*}$:
+
+* ✩ = Lack of Innovation
+* ✩✩ = Inspiring
+* ✩✩✩ = Insightful
+
+\* Personal Opinion
 
 ## Related Paper List
 
