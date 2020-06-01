@@ -61,7 +61,7 @@ mathjax: true
 |An Iterative ***unsupervised*** Person Search Algorithm on Natural Scene Images|CAC 2019|-|✩✩|41.14/40.93|21.74/35.97|
 |GAN-based person search via deep complementary classifier with center-constrained Triplet loss|PR 2020|-|✩|77.89/78.34|53.09/70.39|
 |Robust Partial Matching for Person Search in the Wild|CVPR 2020|-|✩✩✩|88.9/89.3|41.9/81.4|
-|End-to-End Thorough Body Perception for Person Search|AAAI 2020|-||||
+|End-to-End Thorough Body Perception for Person Search|AAAI 2020|-|✩✩|88.4/90.5|48.5/87.9|
 
 Description of the rating$^{*}$:
 
@@ -76,13 +76,12 @@ Description of the rating$^{*}$:
 |Paper|Source|Related Material|
 |:-:|:-:|:-:|
 |Fusion-Attention Network for person search with free-form natural language|PRL 2018|-|
-|Fusion-Attention Network for person search with free-form natural language|PRL|-|
 |Cascade Attention Network for Person Search: Both Image and Text-Image Similarity Selection|arXiv|-|
 |Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search|ACM MM|-|
 |Language Person Search with Mutually Connected Classification Loss|ICASSP 2019|-|
 |Improving Text-Based Person Search by Spatial Matching and Adaptive Threshold|WACV 2018|-|
-|Person Search in Videos with One Portrait Through Visual and Temporal Links|ECCV2018|[Project Page](http://qqhuang.cn/projects/eccv18-person-search/) [Source Code](https://github.com/hqqasw/person-search-PPCC)|
-|Person Search with Natural Language Description|CVPR2017|[Source Code](https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description)|
+|Person Search in Videos with One Portrait Through Visual and Temporal Links|ECCV 2018|[Project Page](http://qqhuang.cn/projects/eccv18-person-search/) [Source Code](https://github.com/hqqasw/person-search-PPCC)|
+|Person Search with Natural Language Description|CVPR 2017|[Source Code](https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description)|
 
 
 ## Dataset
