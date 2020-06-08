@@ -69,7 +69,7 @@ Description of the rating$^{*}$:
 * ✩✩ = Inspiring
 * ✩✩✩ = Insightful
 
-\* Personal Opinion
+\* According to personal opinion
 
 ## Related Paper List
 
@@ -80,8 +80,8 @@ Description of the rating$^{*}$:
 |Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search|ACM MM|-|
 |Language Person Search with Mutually Connected Classification Loss|ICASSP 2019|-|
 |Improving Text-Based Person Search by Spatial Matching and Adaptive Threshold|WACV 2018|-|
-|Person Search in Videos with One Portrait Through Visual and Temporal Links|ECCV 2018|[Project Page](http://qqhuang.cn/projects/eccv18-person-search/) [Source Code](https://github.com/hqqasw/person-search-PPCC)|
-|Person Search with Natural Language Description|CVPR 2017|[Source Code](https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description)|
+|Person Search in Videos with One Portrait Through Visual and Temporal Links|ECCV 2018|[Home](http://qqhuang.cn/projects/eccv18-person-search/) [Code](https://github.com/hqqasw/person-search-PPCC)|
+|Person Search with Natural Language Description|CVPR 2017|[Code](https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description)|
 
 
 ## Dataset
