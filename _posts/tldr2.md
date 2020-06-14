@@ -277,3 +277,8 @@ macOS下文字输入的相关快捷键
 * Option + Fn + Delete：向后删除一个单词
 
 更多快捷键：https://support.apple.com/zh-cn/HT201236
+
+中国计算机学会推荐国际学术会议和期刊目录
+---
+
+[推荐期刊会议](./recommended.pdf)
