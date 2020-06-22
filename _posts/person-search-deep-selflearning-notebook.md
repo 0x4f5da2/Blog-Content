@@ -87,6 +87,7 @@ Description of the rating$^{*}$:
 |Improving Text-Based Person Search by Spatial Matching and Adaptive Threshold|WACV 2018|-|
 |Person Search in Videos with One Portrait Through Visual and Temporal Links|ECCV 2018|[Home](http://qqhuang.cn/projects/eccv18-person-search/) [Code](https://github.com/hqqasw/person-search-PPCC)|
 |Person Search with Natural Language Description|CVPR 2017|[Code](https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description)|
+|Cross-Modal Cross-Domain Moment Alignment Network for Person Search|CVPR 2020|-|
 
 
 ## Dataset
