@@ -62,6 +62,11 @@ mathjax: true
 |GAN-based person search via deep complementary classifier with center-constrained Triplet loss|PR 2020|-|✩|77.89/78.34|53.09/70.39|
 |Robust Partial Matching for Person Search in the Wild|CVPR 2020|-|✩✩✩|88.9/89.3|41.9/81.4|
 |End-to-End Thorough Body Perception for Person Search|AAAI 2020|-|✩✩|88.4/90.5|48.5/87.9|
+|Instance Guided Proposal Network for Person Search|CVPR 2020|||||
+|TCTS: A Task-Consistent Two-stage Framework for Person Search|CVPR 2020|||||
+|Robust Partial Matching for Person Search in the Wild|CVPR 2020|||||
+|Bi-directional Interaction Network for Person Search|CVPR 2020|||||
+
 
 Description of the rating$^{*}$:
 
