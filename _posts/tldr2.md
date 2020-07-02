@@ -282,3 +282,15 @@ macOS下文字输入的相关快捷键
 ---
 
 [推荐期刊会议](./recommended.pdf)
+
+在macOS上使用不受官方支持的打印机
+---
+
+实验室的上古打印机官方的驱动没法在新系统上用，稍微研究了一下，搞了个开源的驱动
+
+* 安装GutenPrint：`brew cask install homebrew/cask-drivers/gutenprint`
+* 在系统设置中添加打印机，如果正常的话应该能直接找到并添加
+* 由于实验室的打印机彩色墨盒有问题，需要设置默认灰度打印
+  * `cupsctl WebInterface=yes`
+  * 在浏览器中输入localhost:631，找到对应的打印机进行设置
+  * `cupsctl WebInterface=no`
