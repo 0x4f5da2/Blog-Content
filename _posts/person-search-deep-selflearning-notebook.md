@@ -64,7 +64,7 @@ mathjax: true
 |End-to-End Thorough Body Perception for Person Search|AAAI 2020|-|✩✩|88.4/90.5|48.5/87.9|
 |Instance Guided Proposal Network for Person Search|CVPR 2020|-|✩✩✩|90.3/91.4|47.2/87.0|
 |TCTS: A Task-Consistent Two-stage Framework for Person Search|CVPR 2020|-|✩✩✩|93.9/95.1|46.8/87.5|
-|Bi-directional Interaction Network for Person Search|CVPR 2020|||||
+|Bi-directional Interaction Network for Person Search|CVPR 2020|-|✩✩✩|90.0/90.7|45.3/81.7|
 
 
 Description of the rating$^{*}$:
