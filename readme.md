@@ -4,6 +4,6 @@
 
 个人博客自动化部署用仓库；
 
-直接在本页面阅读可能会导致图片/链接失效，建议访问[blog.4f5da2.com](https://blog.4f5da2.com)以获取更佳的体验。
+直接在本页面阅读可能会导致内嵌图片/链接失效，建议访问[blog.4f5da2.com](https://blog.4f5da2.com)以获取更佳的体验。
 
 [![](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "知识共享许可协议")](http://creativecommons.org/licenses/by-nc-sa/4.0/)
