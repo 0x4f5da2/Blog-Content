@@ -294,3 +294,12 @@ macOS下文字输入的相关快捷键
   * `cupsctl WebInterface=yes`
   * 在浏览器中输入localhost:631，找到对应的打印机进行设置
   * `cupsctl WebInterface=no`
+
+ssh长时间不操作断连解决方案
+---
+
+在`/etc/ssh/ssh_config`中添加：
+```
+ServerAliveInterval 15
+ServerAliveCountMax 20
+```
