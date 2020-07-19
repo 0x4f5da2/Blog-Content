@@ -303,3 +303,13 @@ ssh长时间不操作断连解决方案
 ServerAliveInterval 15
 ServerAliveCountMax 20
 ```
+在Ubuntu中使用VNC
+---
+
+```sh
+# install VNC server for GNOME
+sudo apt install vino
+
+# disable encryption for better compatibility
+gsetting set org.gnome.Vino require-encryption false
+```
