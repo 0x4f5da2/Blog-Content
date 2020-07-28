@@ -5,7 +5,7 @@ tags:
 mathjax: true
 ---
 
-给自己炼丹时候看的杂七杂八的东西 | My naive wiki for DL 😀
+自己炼丹时候总结的杂七杂八的东西 | My naive wiki for DL 😀
 
 <!-- more -->
 
@@ -87,7 +87,7 @@ $$
 
 https://arxiv.org/abs/1603.07285 中的第四章节讲得比较好 [\[pdf\]](1603.07285.pdf)
 
-取标题的一种方法
+如何正确地为论文取一个题目
 ---
 
 【研究目的】+【研究背景】：【研究方法】
@@ -96,3 +96,32 @@ https://arxiv.org/abs/1603.07285 中的第四章节讲得比较好 [\[pdf\]](160
 研究目的：Towards Cost-Efficient Content Placement
 研究背景：Media Cloud
 研究方法：Modeling and Analysis
+
+Pytorch DDP的一个小坑
+---
+
+* 需要使用DDP包装后的模型来初始化优化器（optimizer），这部分个人的理解是：不这样的话相当于是影响了DDP对于模型在多卡之间同步的封装，会带来出乎意料的结果。
+
+* 对于`DistributedSampler`，需要在每个epoch之前进行`set_epoch`操作
+
+Pytorch分布式相关笔记
+---
+
+### 关于各个环境相关变量的理解
+
+* `WORLD_SIZE`：总进程的数量，通常一个卡一个进程
+* `RANK`：该进程的编号，从0到`WORLD_SIZE-1`
+* `MASTER_ADDR`：`RANK=0`进程的IP
+* `MASTER_PORT`：`RANK=0`进程的端口号
+
+### 进程间通信相关
+
+* 有关进程通信相关概念参考[Writing Distributed Applications with PyTorch](https://pytorch.org/tutorials/intermediate/dist_tuto.html)
+
+* 其中`all_gather`中需要进行gather操作的Tensor需要具有一致的尺寸，对于不同尺寸的Tensor进行需要进行pad之后再进行gather操作
+
+### 杂七杂八
+
+* Pytorch中的DDP实现了绝大多数模块的同步，BatchNorm需要使用SyncBatchNorm进行转换；早期版本貌似对于2D输入的BatchNorm1d貌似支持较差，最近瞄了一眼最新版本的，貌似改过来了
+
+* 对于buffer，默认从`RANK=0`广播到其他进程。自己实现的带有buffer的模块如果需要做到与单卡训练等价的话，需要通过Pytorch的进程通信机制自行实现多卡对应功能

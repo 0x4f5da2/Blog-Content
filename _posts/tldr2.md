@@ -4,7 +4,7 @@ date: 2019-08-28 23:57:19
 tags:
 ---
 
-还是给自己看的杂七杂八的东西 | Yet another naive wiki for myself 😀
+又是自己总结的杂七杂八的东西 | Yet another naive wiki for myself 😀
 
 <!-- more -->
 
@@ -312,4 +312,11 @@ sudo apt install vino
 
 # disable encryption for better compatibility
 gsetting set org.gnome.Vino require-encryption false
+```
+
+从Ubuntu软件源下载deb包
+---
+
+```
+https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/
 ```
