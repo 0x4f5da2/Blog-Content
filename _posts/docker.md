@@ -3,6 +3,11 @@ title: Docker学习笔记
 date: 2018-06-10 23:12:19
 tags:
 ---
+
+在学习和使用Docker的过程中整理的一些概念和技巧。U1：1，Docker真好用(￣▽￣)"
+
+<!-- more -->
+
 <style type="text/css">
 span.bb_spoiler {
 	color: #000000;
@@ -34,8 +39,6 @@ span.bb_spoiler:hover > span {
 * 容器适用于微服务架构
 * 主机的内核与容器共享
 * 容器中的进程与主机自身等价
-
-<!-- more -->
 
 <span class="bb_spoiler"><span>有点累了先休息一会 (￣▽￣)".....然后休息了好几个月，自从学了一些基础的命令之后觉得没有什么用就放在了一边 <del>借口</del>）😅然后后来实习的时候又感觉好有用就又捡回来了</span></span>
 

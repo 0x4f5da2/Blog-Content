@@ -5,7 +5,7 @@ tags:
 mathjax: true
 ---
 
-一些乱七八糟给自己看的东西，并不觉得有人会看😅
+整理的行人搜索（Person Search）的一些文献和相关资料 | ~~Awesome Person Search~~ A naive list of Person Search related material.😅
 
 <!-- more -->
 

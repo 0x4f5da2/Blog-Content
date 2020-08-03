@@ -5,7 +5,7 @@ tags:
 mathjax: true
 ---
 
-自己炼丹时候总结的杂七杂八的东西 | My naive wiki for DL 😀
+自己炼丹时候总结的一些 ~~人生~~ 经验 | My naive wiki for DL 😀
 
 <!-- more -->
 
@@ -125,3 +125,9 @@ Pytorch分布式相关笔记
 * Pytorch中的DDP实现了绝大多数模块的同步，BatchNorm需要使用SyncBatchNorm进行转换；早期版本貌似对于2D输入的BatchNorm1d貌似支持较差，最近瞄了一眼最新版本的，貌似改过来了
 
 * 对于buffer，默认从`RANK=0`广播到其他进程。自己实现的带有buffer的模块如果需要做到与单卡训练等价的话，需要通过Pytorch的进程通信机制自行实现多卡对应功能
+
+### 踩过的一些坑
+
+* 在DDP中`M`个GPU上`batch=N`的训练过程；并不等价于单个GPU`batch=M*N`的训练过程。因为在多GPU梯度同步的过程中，采取的平均而不是累加规约方式。而Pytorch在梯度计算的时候并不会将梯度除以`batch_size`。
+
+* 在DDP训练中，如使用了`DistributedSampler`，需要在每次epoch开始前调用`set_epoch`方法
