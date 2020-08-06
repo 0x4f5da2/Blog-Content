@@ -65,6 +65,9 @@ mathjax: true
 |Instance Guided Proposal Network for Person Search|CVPR 2020|-|✩✩✩|90.3/91.4|47.2/87.0|
 |TCTS: A Task-Consistent Two-stage Framework for Person Search|CVPR 2020|-|✩✩✩|93.9/95.1|46.8/87.5|
 |Bi-directional Interaction Network for Person Search|CVPR 2020|-|✩✩✩|90.0/90.7|45.3/81.7|
+|Joint Person Objectness and Repulsion for PersonSearch|arXiv 2006|||||
+|Deep Learning-based Person Search with Visual Attention Embedding|COMM 2020|||||
+|A Modified Pedestrian Retrieval Method Based on Faster R-CNN with Integration of Pedestrian Detection and Re-Identification|ICALIP 2018|||||
 
 
 Description of the rating$^{*}$:
