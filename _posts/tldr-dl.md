@@ -97,15 +97,14 @@ https://arxiv.org/abs/1603.07285 中的第四章节讲得比较好 [\[pdf\]](160
 研究背景：Media Cloud
 研究方法：Modeling and Analysis
 
-Pytorch DDP的一个小坑
+Pytorch分布式相关笔记
 ---
+
+### 一些小坑
 
 * 需要使用DDP包装后的模型来初始化优化器（optimizer），这部分个人的理解是：不这样的话相当于是影响了DDP对于模型在多卡之间同步的封装，会带来出乎意料的结果。
 
 * 对于`DistributedSampler`，需要在每个epoch之前进行`set_epoch`操作
-
-Pytorch分布式相关笔记
----
 
 ### 关于各个环境相关变量的理解
 
@@ -131,3 +130,53 @@ Pytorch分布式相关笔记
 * 在DDP中`M`个GPU上`batch=N`的训练过程；并不等价于单个GPU`batch=M*N`的训练过程。因为在多GPU梯度同步的过程中，采取的平均而不是累加规约方式。而Pytorch在梯度计算的时候并不会将梯度除以`batch_size`。
 
 * 在DDP训练中，如使用了`DistributedSampler`，需要在每次epoch开始前调用`set_epoch`方法
+
+PyTorch性能调优
+---
+
+* 在`DataLoader`中使用`num_worker > 0`来进行异步的数据加载，并且推荐使用使用`pin_memory=True`
+
+* 使用`torch.backends.cudnn.benchmark= True`来让框架选择最好的底层实现，以获得更好的性能
+
+* 关闭后接`BatchNorm`的卷积层的bias
+
+* 使用`for param in model.parameters(): param.grad = None`来替换model.zero_grad()
+
+* 使用`torch.jit`
+  ```
+  @torch.jit.script
+  def fused_gelu(x):
+      return x * 0.5 * (1.0 + torch.erf(x / 1.41421))
+  ```
+
+[更多参考资料](https://nvlabs.github.io/eccv2020-mixed-precision-tutorial/files/szymon_migacz-pytorch-performance-tuning-guide.pdf)
+
+混合精度训练
+---
+
+```python
+import torch
+
+# Creates once at the beginning of training
+scaler = torch.cuda.amp.GradScaler()
+
+for data, label in data_iter:
+	optimizer.zero_grad()
+
+	# Casts operations to mixed precision
+	with torch.cuda.amp.autocast():
+		loss = model(data)
+
+	# Scales the loss, and calls backward() 
+	# to create scaled gradients
+	scaler.scale(loss).backward()
+	
+	# Unscalesgradients and calls
+	# or skips optimizer.step()
+	scaler.step(optimizer)
+
+	# Updates the scale for next iteration
+	scaler.update()
+```
+
+[更多参考资料](https://nvlabs.github.io/eccv2020-mixed-precision-tutorial/files/dusan_stosic-training-neural-networks-with-tensor-cores.pdf)
