@@ -320,3 +320,7 @@ gsetting set org.gnome.Vino require-encryption false
 ```
 https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/
 ```
+PyCharm中的import红色下划线
+---
+
+PyCharm中的import有红色下划线，但是能运行。解决方法是在代码目录上右键，然后`Mark Directory as`->`Source Root`

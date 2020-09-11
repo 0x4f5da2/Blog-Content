@@ -689,10 +689,13 @@ Ubuntu安装最新的显卡驱动
 
 ```sh
 sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo add-apt-repository --remove ppa:graphics-drivers/ppa  # to remove ppa
 sudo apt update
 sudo apt install nvidia-driver-415  # 或者更高
 
 ```
+
+在最新的Ubuntu仓库里貌似自带了nvidia的驱动，所以不需要这样操作了
 
 在Ubuntu上安装QtDesigner
 ---
