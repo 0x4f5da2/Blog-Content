@@ -65,9 +65,22 @@ mathjax: true
 |Instance Guided Proposal Network for Person Search|CVPR 2020|-|✩✩✩|90.3/91.4|47.2/87.0|
 |TCTS: A Task-Consistent Two-stage Framework for Person Search|CVPR 2020|-|✩✩✩|93.9/95.1|46.8/87.5|
 |Bi-directional Interaction Network for Person Search|CVPR 2020|-|✩✩✩|90.0/90.7|45.3/81.7|
-|Joint Person Objectness and Repulsion for PersonSearch|arXiv 2006|||||
+|Joint Person Objectness and Repulsion for PersonSearch|TIP 2020|-|✩✩|93.23/93.83|52.30/71.51|
 |Deep Learning-based Person Search with Visual Attention Embedding|COMM 2020|||||
 |A Modified Pedestrian Retrieval Method Based on Faster R-CNN with Integration of Pedestrian Detection and Re-Identification|ICALIP 2018|||||
+|Bottom-Up Foreground-Aware Feature Fusion for Person Search|ACM MM 2020|||||
+|Dual Context-Aware Refinement Network for Person Search|ACM MM 2020|||||
+|Tasks Integrated Networks: Joint Detection andRetrieval for Image Search|TPAMI 2019|||||
+|Person Search via Anchor-Free Detection and Part-Based Group Feature Similarity Estimation|PRCV 2020|||||
+|Identity-sensitive loss guided and instance feature boosted deepembedding for person search|Neurocomputing 2020|||||
+|Diverse Knowledge Distillation for End-to-End Person Search|AAAI 2021|||||
+|Learning Discriminative Part Features Through Attentions For Effective And Scalable Person Search|ICIP 2020|||||
+|Weakly Supervised Person Search|DSAA 2020|||||
+|Anchor-Free Detector and Re-Identification with Joint Loss for PersonSearch|J. Phys.: Conf. Ser.|||||
+
+
+
+
 
 
 Description of the rating$^{*}$:
