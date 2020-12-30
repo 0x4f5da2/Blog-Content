@@ -74,7 +74,7 @@ mathjax: true
 |Person Search via Anchor-Free Detection and Part-Based Group Feature Similarity Estimation|PRCV 2020|||||
 |Identity-sensitive loss guided and instance feature boosted deepembedding for person search|Neurocomputing 2020|||||
 |Diverse Knowledge Distillation for End-to-End Person Search|AAAI 2021|[Code](https://github.com/zhangxinyu-xyz/DKD-PersonSearch)|✩✩✩|93.09/94.24|50.51/87.07|
-|Learning Discriminative Part Features Through Attentions For Effective And Scalable Person Search|ICIP 2020|||||
+|Learning Discriminative Part Features Through Attentions For Effective And Scalable Person Search|ICIP 2020|-|✩|85.7/87.6|43.5/84.0|
 |Weakly Supervised Person Search|DSAA 2020|||||
 |Anchor-Free Detector and Re-Identification with Joint Loss for PersonSearch|J. Phys.: Conf. Ser.|||||
 
