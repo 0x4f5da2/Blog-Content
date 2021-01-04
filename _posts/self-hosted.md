@@ -91,11 +91,11 @@ tags:
 
         ```
         [Unit]
-        Description=dcgm-exporter service
+        Description=node-exporter service
 
         [Service]
         User=root
-        ExecStart=/usr/local/bin/dcgm-exporter
+        ExecStart=/usr/local/bin/node_exporter
 
         TimeoutStopSec=10
         Restart=on-failure
@@ -103,6 +103,22 @@ tags:
 
         [Install]
         WantedBy=multi-user.target
+        ```
+    * `cloud-prometheus.service`（由于实验室的云服务器只有22端口，因此在云服务器上安装prometheus，并使用ssh进行端口映射）
+        ```
+            [Unit]
+            Description=port fowarding for cloud prometheus
+            After=network.target
+
+            [Service]
+            ExecStart=/usr/bin/autossh -v -N -L 9091:localhost:9090 domin.of.server.com
+            User=root
+            TimeoutStopSec=30
+            Restart=on-failure
+            RestartSec=300
+
+            [Install]
+            WantedBy=multi-user.target
         ```
 
 * 启动服务
@@ -113,6 +129,8 @@ tags:
     systemctl start dcgm-exporter.service
     systemctl enable node-exporter.service
     systemctl start node-exporter.service
+    systemctl enable cloud-prometheus.service
+    systemctl start cloud-prometheus.service
     ```
 
 在服务端：
@@ -126,3 +144,5 @@ tags:
 * Grafana的Web服务在3000端口，登陆并进行配置
 
 * 前往 https://grafana.com/grafana/dashboards 寻找合适的daskboard。
+
+* 使用nginx进行反向代理
