@@ -66,17 +66,17 @@ mathjax: true
 |TCTS: A Task-Consistent Two-stage Framework for Person Search|CVPR 2020|-|✩✩✩|93.9/95.1|46.8/87.5|
 |Bi-directional Interaction Network for Person Search|CVPR 2020|-|✩✩✩|90.0/90.7|45.3/81.7|
 |Joint Person Objectness and Repulsion for PersonSearch|TIP 2020|-|✩✩|93.23/93.83|52.30/71.51|
-|Deep Learning-based Person Search with Visual Attention Embedding|COMM 2020|||||
+|Deep Learning-based Person Search with Visual Attention Embedding|COMM 2020|-|✩|78.3/79.2|35.8/84.7|
 |A Modified Pedestrian Retrieval Method Based on Faster R-CNN with Integration of Pedestrian Detection and Re-Identification|ICALIP 2018|||||
-|Bottom-Up Foreground-Aware Feature Fusion for Person Search|ACM MM 2020|||||
-|Dual Context-Aware Refinement Network for Person Search|ACM MM 2020|||||
-|Tasks Integrated Networks: Joint Detection andRetrieval for Image Search|TPAMI 2019|||||
-|Person Search via Anchor-Free Detection and Part-Based Group Feature Similarity Estimation|PRCV 2020|||||
-|Identity-sensitive loss guided and instance feature boosted deepembedding for person search|Neurocomputing 2020|||||
+|Bottom-Up Foreground-Aware Feature Fusion for Person Search|ACM MM 2020|-|✩✩✩|90.7/91.6|42.2/81.0|
+|Dual Context-Aware Refinement Network for Person Search|ACM MM 2020|-|✩✩|87.5/88.7|38.8/77.7|
+|Tasks Integrated Networks: Joint Detection andRetrieval for Image Search|TPAMI 2019|-|✩✩|86.2/86.5|31.8/55.1|
+|Person Search via Anchor-Free Detection and Part-Based Group Feature Similarity Estimation|PRCV 2020|-|✩|78.2/88.7|57.8/72.3|
+|Identity-sensitive loss guided and instance feature boosted deepembedding for person search|Neurocomputing 2020|-|✩|81.36/82.38|26.52/74.72|
 |Diverse Knowledge Distillation for End-to-End Person Search|AAAI 2021|[Code](https://github.com/zhangxinyu-xyz/DKD-PersonSearch)|✩✩✩|93.09/94.24|50.51/87.07|
 |Learning Discriminative Part Features Through Attentions For Effective And Scalable Person Search|ICIP 2020|-|✩|85.7/87.6|43.5/84.0|
 |Weakly Supervised Person Search|DSAA 2020|||||
-|Anchor-Free Detector and Re-Identification with Joint Loss for PersonSearch|J. Phys.: Conf. Ser.|||||
+|Anchor-Free Detector and Re-Identification with Joint Loss for PersonSearch|MCTE 2020|-|✩✩|89.4/91.7|34.3/74.1|
 
 
 
