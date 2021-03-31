@@ -674,3 +674,4 @@ def py_cpu_nms(dets, thresh):
 ```python
 # X, Y: N*D
 dists = np.sqrt(-2 * X @ Y.T + np.sum(np.square(X), axis=1) + np.sum(np.square(Y), axis=1)[:,None])
+```
