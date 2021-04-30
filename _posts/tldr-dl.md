@@ -187,4 +187,4 @@ for data, label in data_iter:
 当align corner为True时，认为像素是**点**，当align corner为False时，认为像素是**方块**
 
 
-![](./tldr-dl/align_corner.png)
+![](./align_corner.png)
