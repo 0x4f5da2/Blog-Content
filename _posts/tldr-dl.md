@@ -180,3 +180,11 @@ for data, label in data_iter:
 ```
 
 [更多参考资料](https://nvlabs.github.io/eccv2020-mixed-precision-tutorial/files/dusan_stosic-training-neural-networks-with-tensor-cores.pdf)
+
+插值中的“align corner”
+---
+
+当align corner为True时，认为像素是**点**，当align corner为False时，认为像素是**方块**
+
+
+![](./align_corner.png)
