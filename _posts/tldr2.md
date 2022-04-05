@@ -324,3 +324,26 @@ PyCharm中的import红色下划线
 ---
 
 PyCharm中的import有红色下划线，但是能运行。解决方法是在代码目录上右键，然后`Mark Directory as`->`Source Root`
+
+IEEE论文模版下载
+---
+
+https://template-selector.ieee.org/secure/templateSelector/publicationType
+
+zip分卷压缩
+---
+
+* 压缩：`zip -s 700m -r bar.zip ./foo/`(\[s\]egment, \[r\]ecursive)
+
+* 切分：`zip -s 700m foo.zip --out bar.zip`
+
+* 合并：`zip -s 0 bar.zip --out foo.zip`
+
+使用adb卸载程序
+---
+
+```sh
+adb shell
+pm list packages
+pm uninstall --user 0 <app_name>
+```
